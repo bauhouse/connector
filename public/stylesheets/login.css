@@ -31,7 +31,7 @@ body {
 	padding: 0px;
 	background-color: transparent;
 	overflow: auto;
-	background-image: url(/images/bg/joyentLoginBG.gif);
+	background-image: url(../images/bg/joyentLoginBG.gif);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
