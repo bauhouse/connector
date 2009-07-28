@@ -1,20 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-
-	<title>My Company Name Inc Connector : Mail : Inbox</title>
 	
+	<title>My Company Name Inc Connector : People : Users</title>
+
 	<meta name="viewport" content="width=750; height=2000">
 	<meta name="copyright" content="Copyright 2004-2007 Joyent Inc.">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Joyent Connecter rev. 539 -->
 	
 	<script src="../javascripts/lang/en.js" type="text/javascript"></script>
 	<script src="../javascripts/all.js" type="text/javascript"></script>
-	<script src="../javascripts/mail.js" type="text/javascript"></script>
+	<script src="../javascripts/people.js" type="text/javascript"></script>
 	<link href="../stylesheets/all.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="../stylesheets/joyent.css" media="screen" rel="Stylesheet" type="text/css">
-	<link href="../stylesheets/mail.css" media="screen" rel="Stylesheet" type="text/css">
-	<link href="../stylesheets/lang/en/en-mail.css" media="screen" rel="Stylesheet" type="text/css">
+	<link href="../stylesheets/people.css" media="screen" rel="Stylesheet" type="text/css">
+	<link href="../stylesheets/lang/en/en-people.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="../stylesheets/lang/en/en.css" media="screen" rel="Stylesheet" type="text/css">
 	<!--[if IE 6]>
 	<link href="../stylesheets/ie6.css" media="screen" rel="Stylesheet" type="text/css" />
@@ -33,7 +33,7 @@
 		#Toolbar {width: expression((document.body.clientWidth - 329) + "px");}
 		#contentPane {width: expression((document.body.clientWidth - 329) + "px");}
 		body {background-position: 300px;}
-	</style></head><body style="background-position: 299px 50%;" id="mail">
+	</style></head><body style="background-position: 299px 50%;" id="people">
 	
 
 	<ul id="Dock">
@@ -151,18 +151,32 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 </div>
 		
 <div style="width: 264px;" id="groupsSidebar" class="sidebar selected">
-	<h3>Your Mailboxes</h3>
+	<h3>Your Groups</h3>
 	<div id="groupsYourInset" class="sidebarInset" style="margin-bottom: 15px;">
 		
-<div class="defaultGroups groups"><ul class="groupsList">
-	
+	<div class="defaultGroups groups"><ul class="groupsList">
+		
+<li>
+			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
+			<table><tbody><tr>
+				<td class="dinger">
+				</td>
+				<td>
+					<a href="../people/188917" class="folder people">Contacts</a>
+				</td>
+				<td class="showInfo">
+				</td>
+			</tr></tbody></table>	 
+		</div></div></div></div>
+	</li>
+		
 <li>
 			<div id="editDefaultGroupHead" class="roundtl highlighted"><div class="roundtr"><div id="defaultGroupSelectedEditDivBL" class="roundbl"><div id="defaultGroupSelectedEditDivBR" class="roundbr">
 			<table><tbody><tr>
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/mailbox/inbox" class="defaultGroupInbox folder highlighted"><span id="inbox_name_and_count">Inbox</span></a>
+					<a href="../people/users" class="userFolder folder highlighted">Users</a>
 				</td>
 				<td class="showInfo">
 					<a class="groupInfo collapsed" href="#" id="defaultGroupSelectedEditDinger" onclick="DefaultGroup.editToggle();; return false;" title="View group info">Show</a>
@@ -171,95 +185,20 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 		</div></div></div></div>
 		<div id="editDefaultGroupDialog" class="roundbl groupInfo" style="display: none;"><div class="roundbr groupInfoMargin">
 			
-
-	<a class="groupOption access" href="#" id="standardGroupEditAccessLink" onclick="StandardGroup.toggleEditAccess();; return false;">Access</a>
-	<div id="standardGroupEditAccess" style="display: none;" class="groupOptionMenu">
-		<form action="/permissions/set_group_permissions/654515?group_type=Mailbox" method="post" onsubmit="return StandardGroup.editSubmit(this);">			<input id="access_mode_public" name="access_mode" checked="checked" onclick="Effect.BlindUp('access_mode_restricted_info', { duration: Joyent.effectsDuration });" value="public" type="radio">
-			<label for="public">Public</label>
-			<br>
-			<input id="access_mode_restricted" name="access_mode" onclick="if (! $('access_mode_restricted_info').visible()) Effect.BlindDown('access_mode_restricted_info', { duration: Joyent.effectsDuration });" value="restricted" type="radio">
-			<label for="restricted">Restricted to you</label>
-			<br>
-			<div id="access_mode_restricted_info" style="margin: 4px 2px; display: none;">
-				Also allow:
-				<select name="user_ids[]" size="6" multiple="multiple" style="width: 100%;">
-											<option value="193733">John Smith</option>
-										
-				</select>
-			</div>
-			<div style="text-align: right;">
-				<input name="Submit" value="Save Permissions" type="submit">
-			</div>
-		</form>	 </div>
-
-
-	<a class="groupOption subscription" href="#" id="standardGroupEditSubscriptionsLink" onclick="StandardGroup.toggleEditSubscriptions();; return false;">Subscription</a>
-	<div id="standardGroupEditSubscriptions" style="display: none;" class="groupOptionMenu">
-		View this mailbox in another account:
-		<ul style="margin-top: 0.4em;">
-					 		
-				<li style="line-height: 1.6em;">
-						<input onchange="performCheckboxToggleAction(this, '../subscriptions/create?subscribable_type=Mailbox&user_id=193733&organization_id=149871&subscribable_id=654515' , '../subscriptions/delete');" type="checkbox"> My Company Name Inc (john)
-				</li>
-				 	</ul>
-	</div>
-
-<hr><input onchange="performCheckboxToggleAction(this, '../connect/create_report/11/654515' , '../connect/remove_report/11/654515');" type="checkbox"> Visible in your Workspace
+<input onchange="performCheckboxToggleAction(this, '../connect/create_report/15/193635' , '../connect/remove_report/15/193635');" type="checkbox"> Visible in your Workspace
 <hr>
-<a href="../syndicate/mail/mailbox/654515/rss" class="orangeBadge rss" title="Subscribe to this RSS feed">RSS</a>
+<a href="../people/users/vcards" class="orangeBadge vcard" style="margin-bottom: 3px;" title="Download contacts as a vCard file">VCARD</a>
+<a href="../syndicate/people/users/rss" class="orangeBadge rss" title="Subscribe to this RSS feed">RSS</a>
 		</div></div>
 	</li>
-	
+		
 <li>
 			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
 			<table><tbody><tr>
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/notifications" class="folder notifications">Notifications</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-			
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/mailbox/sent" class="folder defaultGroupSent">Sent</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-					
-			
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/mailbox/drafts" class="folder defaultGroupDrafts">Drafts</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-				
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/mailbox/trash" class="folder defaultGroupTrash">Trash</a>
+					<a href="../people/notifications" class="folder notifications">Notifications</a>
 				</td>
 				<td class="showInfo">
 				</td>
@@ -273,28 +212,26 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/unread_messages/193635" class="folder unreadMessages">Unread Messages</a>
+					<a href="../people/current_time/193635" class="folder currentTime">Current Time</a>
 				</td>
 				<td class="showInfo">
 				</td>
 			</tr></tbody></table>	 
 		</div></div></div></div>
 	</li>
-		 
 
+		
+		
+	</ul></div>
+
+	<div id="addGroup">
+		<a href="#" id="addGroupPlus" class="plus" onclick="return AddGroupWidget.toggle();" title="Add New Smart Group">New…</a>
+		<div id="addGroupMenu" style="display: none;">
+			<a href="#" class="folder smartGroup" onclick="return AddGroupWidget.select('smart');">Smart Group</a>
+					<a class="folder group subscription" href="#" onclick="ModalDialog.showURL('../browser?context=subscribe&subscribable_type=ContactList&app=People'); browser.removeBrowser(); Drawers.hideAll();; return false;">Subscription</a>
+				</div>
+	</div>
 	
-	
-</ul></div>
-
-<div id="addGroup">
-	<a href="#" id="addGroupPlus" class="plus" onclick="return AddGroupWidget.toggle();" title="Add New Mailbox or Smart Mailbox">New…</a>
-	<div id="addGroupMenu" style="display: none;">
-		<a href="#" class="folder group" onclick="return AddGroupWidget.select('standard');">Mailbox</a>
-		<a href="#" class="folder smartGroup" onclick="return AddGroupWidget.select('smart');">Smart Mailbox</a>
-					<a class="folder group subscription" href="#" onclick="ModalDialog.showURL('../browser?context=subscribe&app=Mail'); browser.removeBrowser(); Drawers.hideAll();; return false;">Subscription</a>
-			</div>
-</div>
-
 <div id="smartGroupNew" style="margin: 2px 0pt 0pt; display: none;"><div>
 	
 <form action="../smart_group/create" method="post" onsubmit="return SmartGroup.newSubmit(this);">
@@ -304,7 +241,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 			</td>
 			<td>
 				<a href="#" class="smartGroup folder highlighted" onclick="return false;">
-								New Smart Mailbox				 </a>
+								New Smart Group				 </a>
 			</td>
 			<td class="showInfo">
 			</td>
@@ -312,7 +249,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 	</div></div>
 	<div class="roundbl groupInfo"><div class="roundbr groupInfoMargin">
 		Name:
-		<input id="smart_group_name" name="smart_group_name" style="width: 98%; display: block;" value="New Smart Mailbox" type="text">
+		<input id="smart_group_name" name="smart_group_name" style="width: 98%; display: block;" value="New Smart Group" type="text">
 		<br>
 		Match All: 
 		<fieldset>
@@ -326,7 +263,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 			<a href="#" onclick="SmartGroup.newAddAttribute(); return false;" class="smallAdd">Add Condition</a>
 		</fieldset>
 		<p style="text-align: right; margin-top: 10px;">
-			<input name="smart_group_description_id" value="5" type="hidden">
+			<input name="smart_group_description_id" value="3" type="hidden">
 			<input value="Cancel" onclick="SmartGroup.newCancel(); return false;" type="button">
 			<input name="Submit" value="Save" type="submit">
 		</p>
@@ -334,59 +271,20 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 </form>
 	<script type="text/javascript">
 	//<![CDATA[
-					SmartGroup.attributeDescriptions.push(['21', 'Any Condition']);
-					SmartGroup.attributeDescriptions.push(['25', 'Date']);
-					SmartGroup.attributeDescriptions.push(['17', 'From']);
-					SmartGroup.attributeDescriptions.push(['16', 'Owner Username']);
-					SmartGroup.attributeDescriptions.push(['27', 'Status']);
-					SmartGroup.attributeDescriptions.push(['33', 'Status']);
-					SmartGroup.attributeDescriptions.push(['19', 'Subject']);
-					SmartGroup.attributeDescriptions.push(['18', 'To']);
-				SmartGroup.newContents = "\n<form action=\"../smart_group/create\" method=\"post\" onsubmit=\"return SmartGroup.newSubmit(this);\">\n	<div class=\"roundtl highlighted\"><div class=\"roundtr\">\n		<table><tr>\n			<td class=\"dinger\">\n	 		</td>\n			<td>\n				<a href=\"#\" class=\"smartGroup folder highlighted\" onclick=\"return false;\">\n								New Smart Mailbox				 </a>\n	 		</td>\n			<td class=\"showInfo\">\n	 		</td>\n		</tr></table>\n	</div></div>\n	<div class=\"roundbl groupInfo\"><div class=\"roundbr groupInfoMargin\">\n		 Name:\n		<input id=\"smart_group_name\" name=\"smart_group_name\" style=\"width: 98%; display: block;\" type=\"text\" value=\"New Smart Mailbox\" />\n		 <br />\n		 Match All: \n		<fieldset>\n	 		<legend>Tags:</legend>\n	 		<div id=\"smartGroupNewTagList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddTag(); return false;\" class=\"smallAdd\">Add Tag</a>\n		</fieldset>\n		<fieldset>\n	 		<legend>Conditions:</legend>\n	 		<div id=\"smartGroupNewAttributeList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddAttribute(); return false;\" class=\"smallAdd\">Add Condition</a>\n		</fieldset>\n		<p style=\"text-align: right; margin-top: 10px;\">\n			<input type=\"hidden\" name=\"smart_group_description_id\" value=\"5\" />\n			 <input type=\"button\" value=\"Cancel\" onclick=\"SmartGroup.newCancel(); return false;\" />\n			 <input type=\"submit\" name=\"Submit\" value=\"Save\" />\n		 </p>\n	 </div></div>\n</form>";
+					SmartGroup.attributeDescriptions.push(['23', 'Any Condition']);
+					SmartGroup.attributeDescriptions.push(['5', 'Company Name']);
+					SmartGroup.attributeDescriptions.push(['4', 'First Name']);
+					SmartGroup.attributeDescriptions.push(['6', 'Full Name']);
+					SmartGroup.attributeDescriptions.push(['7', 'Last Name']);
+					SmartGroup.attributeDescriptions.push(['26', 'Owner Username']);
+				SmartGroup.newContents = "\n<form action=\"../smart_group/create\" method=\"post\" onsubmit=\"return SmartGroup.newSubmit(this);\">\n	<div class=\"roundtl highlighted\"><div class=\"roundtr\">\n		<table><tr>\n			<td class=\"dinger\">\n	 		</td>\n			<td>\n				<a href=\"#\" class=\"smartGroup folder highlighted\" onclick=\"return false;\">\n								New Smart Group				 </a>\n	 		</td>\n			<td class=\"showInfo\">\n	 		</td>\n		</tr></table>\n	</div></div>\n	<div class=\"roundbl groupInfo\"><div class=\"roundbr groupInfoMargin\">\n		 Name:\n		<input id=\"smart_group_name\" name=\"smart_group_name\" style=\"width: 98%; display: block;\" type=\"text\" value=\"New Smart Group\" />\n		 <br />\n		 Match All: \n		<fieldset>\n	 		<legend>Tags:</legend>\n	 		<div id=\"smartGroupNewTagList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddTag(); return false;\" class=\"smallAdd\">Add Tag</a>\n		</fieldset>\n		<fieldset>\n	 		<legend>Conditions:</legend>\n	 		<div id=\"smartGroupNewAttributeList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddAttribute(); return false;\" class=\"smallAdd\">Add Condition</a>\n		</fieldset>\n		<p style=\"text-align: right; margin-top: 10px;\">\n			<input type=\"hidden\" name=\"smart_group_description_id\" value=\"3\" />\n			 <input type=\"button\" value=\"Cancel\" onclick=\"SmartGroup.newCancel(); return false;\" />\n			 <input type=\"submit\" name=\"Submit\" value=\"Save\" />\n		 </p>\n	 </div></div>\n</form>";
 	//]]>
 	</script>
 </div></div>
 
-<div id="addGroupDialog" style="margin: 2px 0pt 0pt; display: none;">
-	<div>
-		<form action="/mail/create_mailbox" method="post" onsubmit="return StandardGroup.newSubmit(this);">			<div class="roundtl highlighted"><div class="roundtr">
-				<table>
-					<tbody><tr>
-						<td class="dinger">
-						</td>
-						<td>
-							<a href="#" class="folder highlighted group" onclick="return false;">
-								New Mailbox		 					 </a>
-						</td>
-						<td class="showInfo">
-						</td>
-					</tr>
-				</tbody></table>
-			</div></div>
-			<div class="roundbl groupInfo"><div class="roundbr groupInfoMargin">
-				Name:
-				<input id="group_name" name="group_name" style="width: 100%; display: block;" value="New Mail Controller" type="text">
-									<input id="parent_id" name="parent_id" value="654515" type="hidden">
-								<p style="text-align: right; margin-top: 10px;">
-					<input value="Cancel" onclick="StandardGroup.newCancel();" type="button">
-					<input name="Submit" value="Save" type="submit">
-				</p>
-			</div></div>
-		</form>	 </div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-Event.observe(window, 'load', function(event){ Mail.updateInboxUnreadCount(); });
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-new PeriodicalExecuter(function(){ Mail.updateInboxUnreadCount(); }, 120);
-//]]>
-</script>
 	</div>
 	<div id="groupsOthers" class="collapsiblePalette collapsed">
-		<h3><a href="#" onclick="CollapsiblePalette.toggle('groupsOthers');; return false;">Others' Mailboxes</a></h3>
+		<h3><a href="#" onclick="CollapsiblePalette.toggle('groupsOthers');; return false;">Others' Groups</a></h3>
 		<div id="groupsOthersInset" class="content sidebarInset" style="display: none;">
 			
 <div id="others_groups">
@@ -511,24 +409,105 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 </div>
 	
 <ul style="left: 328px;" id="Toolbar">
-			<li class="actionCompose"><a href="../mail/compose">Compose</a></li>
-						 			<li class="actionCopy"><a class="disabled" href="#" id="actionCopyLink" onclick="return Drawers.toggleBrowser('Copy'); return false;">Copy</a></li>
-				<li class="actionMove"><a class="disabled" href="#" id="actionMoveLink" onclick="return Drawers.toggleBrowser('Move'); return false;">Move</a></li>
-		 		<li class="actionDelete">
-	<a class="disabled" href="#" id="actionDeleteLink" onclick="return Toolbar.deleteList('../mail/delete');; return false;" title="Delete all selected items.">Delete</a>
+			<li>
+
+<div id="graph_container">
+	<div id="graphLabel">
+		2/2 Users Created	</div>
+	<div id="graph">
+		<strong class="bar" style="width: 100%;"></strong>
+	</div>
+</div>
 </li>
-		</ul>
+				<li class="actionNew"><a href="../person/create">New</a></li> 
+				 
+			<li class="actionCopyDirect">
+<form action="../people/copy" id="toolbarCopyForm" method="post" onsubmit="return Toolbar.contactsCopySubmit(this);" style="display: inline;">	 <span id="CopyLink">
+		<input id="toolbarCopyIDs" name="ids" value="" type="hidden">
+		<input id="toolbarCopySubmitButton" style="display: none;" type="submit">
+		<a class="disabled" id="actionCopyLink" href="#" onclick="$('toolbarCopySubmitButton').click(); return false;" title="Copy all selected items to your Contacts">Copy</a>
+	</span>
+</form></li>			
+				<li class="actionDelete">
+	<a class="disabled" href="#" id="actionDeleteLink" onclick="return Toolbar.deleteList('../people/delete');; return false;" title="Delete all selected items.">Delete</a>
+</li>
+				<li class="actionImport"><a href="#" id="actionPeopleImportLink" onclick="return Drawers.toggle('PeopleImport');; return false;">Import vCards</a></li>
+				<li class="actionJajah"><a class="disabled" href="#" id="actionJajahLink" onclick="return Drawers.toggle('Jajah');; return false;">Call</a></li>
+	</ul>
 	<div style="left: 328px;" id="contentPane">
 		
 <div id="Drawers">
-			<div class="drawerContent" id="drawerCopy" style="display: none;">
-<form action="../mail/copy" id="toolbarCopyForm" method="post" style="display: inline;">	<input id="toolbarCopyGroupID" name="new_group_id" value="" type="hidden">
-	<input id="toolbarCopyIDs" name="ids" value="" type="hidden">
-</form><div id="CopyBrowser" class="browser_placeholder" style="display: none;"> </div></div>
-				<div class="drawerContent" id="drawerMove" style="display: none;">
-<form action="../mail/move" id="toolbarMoveForm" method="post" style="display: inline;">	<input id="toolbarMoveGroupID" name="new_group_id" value="" type="hidden">
-	<input id="toolbarMoveIDs" name="ids" value="" type="hidden">
-</form><div id="MoveBrowser" class="browser_placeholder" style="display: none;"> </div></div>
+			<div class="drawerContent" id="drawerPeopleImport" style="display: none;">
+<h5>Import contacts from a vCard file (.vcf)</h5>
+<form action="../people/import" class="item_editor" enctype="multipart/form-data" method="post" onsubmit="return People.validateSubmitImport(this);" style="margin-bottom: 0pt;">	<fieldset>
+				<input id="vcard" name="vcard" style="margin-left: 10px;" type="file">
+	</fieldset>
+	<div class="drawerButtons">
+			<input value="Cancel" onclick="Drawers.hide('PeopleImport');" type="button">
+			<input name="commit" value="Import" type="submit">
+	</div>
+</form></div>
+				<div class="drawerContent" id="drawerJajah" style="display: none;">
+<p id="jajah_status">Empty Jajah credentials.</p>
+<p style="float: right;">Balance: <em id="jajah_balance">??</em></p>
+<table border="0" width="100%">
+	<tbody><tr>
+		<td style="padding: 0pt 1em; vertical-align: top;" width="50%">
+			<h6>Phone Numbers</h6>
+		</td>
+		<td style="padding: 0pt 1em; vertical-align: top;" width="50%">
+			<h6>Your Jajah Login</h6>
+		</td>
+	</tr>
+</tbody></table>
+
+<form action="../people/call" method="post" onsubmit="new Ajax.Request('../people/call', {asynchronous:true, evalScripts:true, onFailure:function(request){$('jajah_status').innerText = 'An unknown error has occurred.'}, onLoading:function(request){$('jajah_status').innerText = 'Connecting...'}, parameters:Form.serialize(this)}); return false;"><fieldset>
+	<table border="0" width="100%">
+		<tbody><tr>
+			<td style="border-right: 1px solid rgb(177, 177, 177); padding: 0pt 1em 0pt 0pt; vertical-align: top;" width="50%">
+				<div class="your_number">
+					<dl>
+						<dt>
+							Your Jajah Number						</dt>
+						<dd>
+							<select id="jajah_from_number" name="jajah_from_number"></select>
+						</dd>
+					</dl>
+				</div>
+				<div id="to_numbers">
+				</div>
+			</td>
+			<td style="padding: 0pt 0pt 0pt 1em; vertical-align: top;" width="50%">
+				<dl>
+					<dt>
+						Your Email Address:
+					</dt>
+					<dd>
+						
+						
+						<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(event){new Ajax.Request('../people/jajah_info', {asynchronous:true, evalScripts:true, onLoading:function(request){$('jajah_status').innerText = 'Connecting...'}, onFailure:function(request){$('jajah_status').innerText = 'An unknown error has occurred.'}, parameters: {jajah_username:$('jajah_username').value, jajah_password:$('jajah_password').value}});})
+//]]>
+</script>
+						<input id="jajah_username" name="jajah_username" onblur="new Ajax.Request('../people/jajah_info', {asynchronous:true, evalScripts:true, onLoading:function(request){$('jajah_status').innerText = 'Connecting...'}, onFailure:function(request){$('jajah_status').innerText = 'An unknown error has occurred.'}, parameters: {jajah_username:$('jajah_username').value, jajah_password:$('jajah_password').value}});" maxlength="100" tabindex="1" value="" type="text">
+					</dd>
+					<dt align="right">
+						Your Password:
+					</dt>
+					<dd>
+						<input id="jajah_password" name="jajah_password" onblur="new Ajax.Request('../people/jajah_info', {asynchronous:true, evalScripts:true, onLoading:function(request){$('jajah_status').innerText = 'Connecting...'}, onFailure:function(request){$('jajah_status').innerText = 'An unknown error has occurred.'}, parameters: {jajah_username:$('jajah_username').value, jajah_password:$('jajah_password').value}});" maxlength="100" tabindex="1" value="" autocomplete="off" type="password">
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody></table>
+</fieldset>
+<div class="drawerButtons">
+	<input value="Cancel" onclick="Drawers.hide('Jajah');" type="button">
+	<input name="commit" value="Start Call" type="submit">
+</div>
+</form></div>
 	</div>
 		<div id="contentWrapper">
 			
@@ -536,16 +515,16 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 
 			 
 
-<div style="position: relative;" class="report">		
+<div style="position: relative;" class="report">
 	
 
 <div>
 	<ul class="reportBoxHeader">
 		<li>
-			<strong>Inbox</strong>
+			<strong>Users</strong>
 			•
-						<span id="paginationTotalCount">1</span>
-			messages
+						<span id="paginationTotalCount">2</span>
+			people
 		</li>
 		<li class="right arrowNext">
 			
@@ -561,56 +540,85 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 		<colgroup>
 			<col style="width: 6%;">
 			<col style="width: 6%;">
-			<col style="width: 6%;">
-			<col style="width: 20%;">
-			<col style="width: 36%;">
-			<col style="width: 20%;">
+			<col style="width: 16%;">
+			<col style="width: 16%;">
+			<col style="width: 18%;">
+			<col style="width: 16%;">
+			<col style="width: 16%;">
 			<col style="width: 6%;">
 		</colgroup>
 		<thead>
 			<tr>
 				<th class="checkBox" align="center"><div id="listCheckboxToggle" class="none" style="text-align: center;"><a href="#" onclick="JoyentPage.setItemCheckboxes(); return false;" title="Click to toggle your selection.">Toggle</a></div></th>
-				<th class="seen unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=seen" class="status" title="Read status">Status</a></th>
-				<th class="has_attachments unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=has_attachments" class="attachments" title="Message has attachments?">Attachments</a></th>
-									<th class="unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=sender">From</a></th>
-								<th class="unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=subject">Subject</a></th>
-				<th class="listedByDescending"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=date">Date</a></th>
+				<th class="person unsorted"><a href="../people/set_sort_order?sort_order=ASC&amp;sort_field=person_type" class="person" title="Person Type">Person Type</a></th>
+				<th class="unsorted"><a href="../people/set_sort_order?sort_order=ASC&amp;sort_field=first_name">First Name</a></th>
+				<th class="listedByAscending"><a href="../people/set_sort_order?sort_order=DESC&amp;sort_field=last_name">Last Name</a></th>
+				<th class="unsorted"><a href="../people/set_sort_order?sort_order=ASC&amp;sort_field=primary_email_cache">Email Address</a></th>
+				<th class="unsorted"><a href="../people/set_sort_order?sort_order=ASC&amp;sort_field=primary_phone_cache">Phone Number</a></th>
+				<th class="unsorted"><a href="../people/set_sort_order?sort_order=ASC&amp;sort_field=company_name">Company Name</a></th>
 				<th class="detailView"><span>Peek</span></th>
 			</tr>
 		</thead>
 		<tbody>
-							<tr id="message_52528911_tr" itemdomid="message_52528911" class="itemRow evenRow">
-			 		<td class="checkbox">
-				 		<input class="listCheckbox" id="message_52528911_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="message_52528911" type="checkbox">
-			 		</td>
-					<td class="statusCol">
-						 <a href="../mail/inbox/52528911" id="status_icon_message_52528911">
-							 
-						</a>
+							<tr id="person_1510069_tr" itemdomid="person_1510069" class="itemRow evenRow">
+					<td class="checkbox">
+						<input class="listCheckbox" id="person_1510069_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="person_1510069" type="checkbox">
 					</td>
-					<td class="enclosure">
-						
-							<img alt="Enclosure" src="../images/icons/enclosure.png">
-						
+					<td class="person">
+												<a href="../person/1510069" class="admin" title="Admin">Admin</a>
 					</td>
-			 		<td>
-													 <a href="../mail/inbox/52528911"><span title="&lt;john@example.com&gt;">John | My Company Name</span></a>
-											</td>
-			 		<td>
-						<a href="../mail/inbox/52528911">Re: Your Joyent Connector Account</a>
+					<td>
+						<a href="../person/1510069">Jane</a>
 					</td>
-			 		<td>
-						<a href="../mail/inbox/52528911">about 3 hours ago</a>
+					<td>
+						<a href="../person/1510069">Doe</a>
 					</td>
-			 		<td id="message_52528911_td_details_icon" class="details">
-						<a href="#" onclick="PeekView.toggle('message_52528911', '../mail/654515/52528911?update_id=message_52528911_td_details'); return false;">Details</a>
-			 		</td>
-		 		</tr>
-		 		<tr id="message_52528911_tr_details" itemdomid="message_52528911" style="display: none;" class="evenRow">
-			 		<td id="message_52528911_td_details" colspan="7" class="Details"></td>
+					<td>
+						<a href="../mail/compose?to=Jane+Doe+%3Cjane%40example.com%3E" title="Compose a new email to Jane Doe">jane@example.com</a>
+					</td>
+					<td>
+						<a href="../person/1510069">555 123 4567</a>
+					</td>
+					<td>
+						<a href="../person/1510069">My Company Name Inc</a>
+					</td>
+					<td id="person_1510069_td_details_icon" class="details">
+						<a href="#" onclick="PeekView.toggle('person_1510069', '../person/1510069?update_id=person_1510069_td_details'); return false;">Details</a>
+					</td>
 				</tr>
-			
-		</tbody>
+				<tr id="person_1510069_tr_details" itemdomid="person_1510069" style="display: none;" class="evenRow">
+					<td id="person_1510069_td_details" colspan="8" class="accountDetails Details"></td>
+				</tr>
+							<tr id="person_1510167_tr" itemdomid="person_1510167" class="itemRow oddRow">
+					<td class="checkbox">
+						<input class="listCheckbox" id="person_1510167_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="person_1510167" type="checkbox">
+					</td>
+					<td class="person">
+												<a href="../person/1510167" class="user" title="User">User</a>
+					</td>
+					<td>
+						<a href="../person/1510167">John</a>
+					</td>
+					<td>
+						<a href="../person/1510167">Smith</a>
+					</td>
+					<td>
+						<a href="../mail/compose?to=John+Smith+%3Cjohn%40example.com%3E" title="Compose a new email to John Smith">john@example.com</a>
+					</td>
+					<td>
+						<a href="../person/1510167">555 123 4567</a>
+					</td>
+					<td>
+						<a href="../person/1510167">My Company Name Inc</a>
+					</td>
+					<td id="person_1510167_td_details_icon" class="details">
+						<a href="#" onclick="PeekView.toggle('person_1510167', '../person/1510167?update_id=person_1510167_td_details'); return false;">Details</a>
+					</td>
+				</tr>
+				<tr id="person_1510167_tr_details" itemdomid="person_1510167" style="display: none;" class="oddRow">
+					<td id="person_1510167_td_details" colspan="8" class="accountDetails Details"></td>
+				</tr>
+					 </tbody>
 	</table>
 </div>
 		</div>
@@ -619,10 +627,11 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 	<div id="modalDialog"><div id="lbLoadMessage"></div></div>
 	<script type="text/javascript">
 	//<![CDATA[
-		Joyent.applicationName = 'mail';
-		Joyent.groupName = 'Mailbox';
+		Joyent.applicationName = 'people';
+		Joyent.groupName = 'Group';
 		Joyent.viewKind = 'list';
-		Item.create({ domId: 'message_52528911', arId: '52528911', arType: 'Message', userDomId: 'user_193635', selected: false, canEdit: true, canCopy: true, canMove: true, canDelete: true, mustConfirmDelete: false });
+		Item.create({ domId: 'person_1510069', arId: '1510069', arType: 'Person', userDomId: 'user_193635', selected: false, canEdit: true, canCopy: true, canMove: false, canDelete: false, mustConfirmDelete: true });
+Item.create({ domId: 'person_1510167', arId: '1510167', arType: 'Person', userDomId: 'user_193733', selected: false, canEdit: true, canCopy: true, canMove: false, canDelete: true, mustConfirmDelete: true });
 User.create({ domId: 'user_193635', arId: 193635, personDomId: 'person_1510069', username: 'jane', fullName: 'Jane%20Doe', sortName: 'Doe%20Jane%20', current: true, selected: true });
 User.create({ domId: 'user_193733', arId: 193733, personDomId: 'person_1510167', username: 'john', fullName: 'John%20Smith', sortName: 'Smith%20John%20', current: false, selected: false });
 		Tag.create({ domId: 'tag_90217', arId: 90217, name: 'CSS' });

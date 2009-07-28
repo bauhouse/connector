@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-	<title>My Company Name Inc Connector : Mail : Inbox</title>
+	<title>My Company Name Inc Connector : Bookmarks : Bookmarks</title>
 	
 	<meta name="viewport" content="width=750; height=2000">
 	<meta name="copyright" content="Copyright 2004-2007 Joyent Inc.">
@@ -10,11 +10,11 @@
 	
 	<script src="../javascripts/lang/en.js" type="text/javascript"></script>
 	<script src="../javascripts/all.js" type="text/javascript"></script>
-	<script src="../javascripts/mail.js" type="text/javascript"></script>
+	<script src="../javascripts/bookmarks.js" type="text/javascript"></script>
 	<link href="../stylesheets/all.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="../stylesheets/joyent.css" media="screen" rel="Stylesheet" type="text/css">
-	<link href="../stylesheets/mail.css" media="screen" rel="Stylesheet" type="text/css">
-	<link href="../stylesheets/lang/en/en-mail.css" media="screen" rel="Stylesheet" type="text/css">
+	<link href="../stylesheets/bookmarks.css" media="screen" rel="Stylesheet" type="text/css">
+	<link href="../stylesheets/lang/en/en-bookmarks.css" media="screen" rel="Stylesheet" type="text/css">
 	<link href="../stylesheets/lang/en/en.css" media="screen" rel="Stylesheet" type="text/css">
 	<!--[if IE 6]>
 	<link href="../stylesheets/ie6.css" media="screen" rel="Stylesheet" type="text/css" />
@@ -22,6 +22,7 @@
 	<!--[if IE 7]>
 	<link href="../stylesheets/ie7.css" media="screen" rel="Stylesheet" type="text/css" />
 	<![endif]-->
+
 
 
 	<style type="text/css">
@@ -33,7 +34,7 @@
 		#Toolbar {width: expression((document.body.clientWidth - 329) + "px");}
 		#contentPane {width: expression((document.body.clientWidth - 329) + "px");}
 		body {background-position: 300px;}
-	</style></head><body style="background-position: 299px 50%;" id="mail">
+	</style></head><body style="background-position: 299px 50%;" id="bookmarks">
 	
 
 	<ul id="Dock">
@@ -118,7 +119,7 @@
 		</li>
 		<li id="logout">
 			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-				<a href="../logout">Sign Out</a>
+				<a href="../">Sign Out</a>
 			</div></div></div></div>
 		</li>
 	</ul>
@@ -151,7 +152,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 </div>
 		
 <div style="width: 264px;" id="groupsSidebar" class="sidebar selected">
-	<h3>Your Mailboxes</h3>
+	<h3>Your Bookmark Folders</h3>
 	<div id="groupsYourInset" class="sidebarInset" style="margin-bottom: 15px;">
 		
 <div class="defaultGroups groups"><ul class="groupsList">
@@ -162,7 +163,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/mailbox/inbox" class="defaultGroupInbox folder highlighted"><span id="inbox_name_and_count">Inbox</span></a>
+					<a href="../bookmarks/188791" class="all folder highlighted">Bookmarks</a>
 				</td>
 				<td class="showInfo">
 					<a class="groupInfo collapsed" href="#" id="defaultGroupSelectedEditDinger" onclick="DefaultGroup.editToggle();; return false;" title="View group info">Show</a>
@@ -174,7 +175,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 
 	<a class="groupOption access" href="#" id="standardGroupEditAccessLink" onclick="StandardGroup.toggleEditAccess();; return false;">Access</a>
 	<div id="standardGroupEditAccess" style="display: none;" class="groupOptionMenu">
-		<form action="/permissions/set_group_permissions/654515?group_type=Mailbox" method="post" onsubmit="return StandardGroup.editSubmit(this);">			<input id="access_mode_public" name="access_mode" checked="checked" onclick="Effect.BlindUp('access_mode_restricted_info', { duration: Joyent.effectsDuration });" value="public" type="radio">
+		<form action="/permissions/set_group_permissions/188791?group_type=BookmarkFolder" method="post" onsubmit="return StandardGroup.editSubmit(this);">			 <input id="access_mode_public" name="access_mode" checked="checked" onclick="Effect.BlindUp('access_mode_restricted_info', { duration: Joyent.effectsDuration });" value="public" type="radio">
 			<label for="public">Public</label>
 			<br>
 			<input id="access_mode_restricted" name="access_mode" onclick="if (! $('access_mode_restricted_info').visible()) Effect.BlindDown('access_mode_restricted_info', { duration: Joyent.effectsDuration });" value="restricted" type="radio">
@@ -183,7 +184,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 			<div id="access_mode_restricted_info" style="margin: 4px 2px; display: none;">
 				Also allow:
 				<select name="user_ids[]" size="6" multiple="multiple" style="width: 100%;">
-											<option value="193733">John Smith</option>
+											<option value="193733">John Neumann</option>
 										
 				</select>
 			</div>
@@ -195,18 +196,18 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 
 	<a class="groupOption subscription" href="#" id="standardGroupEditSubscriptionsLink" onclick="StandardGroup.toggleEditSubscriptions();; return false;">Subscription</a>
 	<div id="standardGroupEditSubscriptions" style="display: none;" class="groupOptionMenu">
-		View this mailbox in another account:
+		View this bookmark folder in another account:
 		<ul style="margin-top: 0.4em;">
 					 		
 				<li style="line-height: 1.6em;">
-						<input onchange="performCheckboxToggleAction(this, '../subscriptions/create?subscribable_type=Mailbox&user_id=193733&organization_id=149871&subscribable_id=654515' , '../subscriptions/delete');" type="checkbox"> My Company Name Inc (john)
+						<input onchange="performCheckboxToggleAction(this, '../subscriptions/create?subscribable_type=Bookmark+Folder&user_id=193733&organization_id=149871&subscribable_id=188791' , '../subscriptions/delete');" type="checkbox"> My Company Name Inc (john)
 				</li>
 				 	</ul>
 	</div>
 
-<hr><input onchange="performCheckboxToggleAction(this, '../connect/create_report/11/654515' , '../connect/remove_report/11/654515');" type="checkbox"> Visible in your Workspace
+<hr><input onchange="performCheckboxToggleAction(this, '../connect/create_report/23/193635' , '../connect/remove_report/23/193635');" checked="checked" type="checkbox"> Visible in your Workspace
 <hr>
-<a href="../syndicate/mail/mailbox/654515/rss" class="orangeBadge rss" title="Subscribe to this RSS feed">RSS</a>
+<a href="../syndicate/bookmarks/188791/rss" class="orangeBadge rss" title="Subscribe to this RSS feed">RSS</a>
 		</div></div>
 	</li>
 	
@@ -216,82 +217,36 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/notifications" class="folder notifications">Notifications</a>
+					<a href="../bookmarks/everyone" class="folder everyones">Others' Bookmarks</a>
 				</td>
 				<td class="showInfo">
 				</td>
 			</tr></tbody></table>	 
 		</div></div></div></div>
 	</li>
-			
+	
 <li>
 			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
 			<table><tbody><tr>
 				<td class="dinger">
 				</td>
 				<td>
-					<a href="../mail/mailbox/sent" class="folder defaultGroupSent">Sent</a>
+					<a href="../bookmarks/notifications" class="folder notifications">Notifications</a>
 				</td>
 				<td class="showInfo">
 				</td>
 			</tr></tbody></table>	 
 		</div></div></div></div>
 	</li>
-					
-			
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/mailbox/drafts" class="folder defaultGroupDrafts">Drafts</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-				
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/mailbox/trash" class="folder defaultGroupTrash">Trash</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-		
-<li>
-			<div class="roundtl"><div class="roundtr"><div class="roundbl"><div class="roundbr">
-			<table><tbody><tr>
-				<td class="dinger">
-				</td>
-				<td>
-					<a href="../mail/unread_messages/193635" class="folder unreadMessages">Unread Messages</a>
-				</td>
-				<td class="showInfo">
-				</td>
-			</tr></tbody></table>	 
-		</div></div></div></div>
-	</li>
-		 
 
 	
-	
-</ul></div>
+	</ul></div>
 
 <div id="addGroup">
-	<a href="#" id="addGroupPlus" class="plus" onclick="return AddGroupWidget.toggle();" title="Add New Mailbox or Smart Mailbox">New…</a>
+	<a href="#" id="addGroupPlus" class="plus" onclick="return AddGroupWidget.toggle();" title="Add New Folder or Smart Folder">New…</a>
 	<div id="addGroupMenu" style="display: none;">
-		<a href="#" class="folder group" onclick="return AddGroupWidget.select('standard');">Mailbox</a>
-		<a href="#" class="folder smartGroup" onclick="return AddGroupWidget.select('smart');">Smart Mailbox</a>
-					<a class="folder group subscription" href="#" onclick="ModalDialog.showURL('../browser?context=subscribe&app=Mail'); browser.removeBrowser(); Drawers.hideAll();; return false;">Subscription</a>
+		<a href="#" class="folder smartGroup" onclick="return AddGroupWidget.select('smart');">Smart Folder</a>
+					<a class="folder group subscription" href="#" onclick="ModalDialog.showURL('../browser?context=subscribe&app=Bookmarks'); browser.removeBrowser(); Drawers.hideAll();; return false;">Subscription</a>
 			</div>
 </div>
 
@@ -304,7 +259,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 			</td>
 			<td>
 				<a href="#" class="smartGroup folder highlighted" onclick="return false;">
-								New Smart Mailbox				 </a>
+								New Smart Bookmark Folder				 </a>
 			</td>
 			<td class="showInfo">
 			</td>
@@ -312,7 +267,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 	</div></div>
 	<div class="roundbl groupInfo"><div class="roundbr groupInfoMargin">
 		Name:
-		<input id="smart_group_name" name="smart_group_name" style="width: 98%; display: block;" value="New Smart Mailbox" type="text">
+		<input id="smart_group_name" name="smart_group_name" style="width: 98%; display: block;" value="New Smart Bookmark Folder" type="text">
 		<br>
 		Match All: 
 		<fieldset>
@@ -326,7 +281,7 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 			<a href="#" onclick="SmartGroup.newAddAttribute(); return false;" class="smallAdd">Add Condition</a>
 		</fieldset>
 		<p style="text-align: right; margin-top: 10px;">
-			<input name="smart_group_description_id" value="5" type="hidden">
+			<input name="smart_group_description_id" value="6" type="hidden">
 			<input value="Cancel" onclick="SmartGroup.newCancel(); return false;" type="button">
 			<input name="Submit" value="Save" type="submit">
 		</p>
@@ -334,59 +289,18 @@ Event.observe(window, 'load', function(event){ Search.init(); });
 </form>
 	<script type="text/javascript">
 	//<![CDATA[
-					SmartGroup.attributeDescriptions.push(['21', 'Any Condition']);
-					SmartGroup.attributeDescriptions.push(['25', 'Date']);
-					SmartGroup.attributeDescriptions.push(['17', 'From']);
-					SmartGroup.attributeDescriptions.push(['16', 'Owner Username']);
-					SmartGroup.attributeDescriptions.push(['27', 'Status']);
-					SmartGroup.attributeDescriptions.push(['33', 'Status']);
-					SmartGroup.attributeDescriptions.push(['19', 'Subject']);
-					SmartGroup.attributeDescriptions.push(['18', 'To']);
-				SmartGroup.newContents = "\n<form action=\"../smart_group/create\" method=\"post\" onsubmit=\"return SmartGroup.newSubmit(this);\">\n	<div class=\"roundtl highlighted\"><div class=\"roundtr\">\n		<table><tr>\n			<td class=\"dinger\">\n	 		</td>\n			<td>\n				<a href=\"#\" class=\"smartGroup folder highlighted\" onclick=\"return false;\">\n								New Smart Mailbox				 </a>\n	 		</td>\n			<td class=\"showInfo\">\n	 		</td>\n		</tr></table>\n	</div></div>\n	<div class=\"roundbl groupInfo\"><div class=\"roundbr groupInfoMargin\">\n		 Name:\n		<input id=\"smart_group_name\" name=\"smart_group_name\" style=\"width: 98%; display: block;\" type=\"text\" value=\"New Smart Mailbox\" />\n		 <br />\n		 Match All: \n		<fieldset>\n	 		<legend>Tags:</legend>\n	 		<div id=\"smartGroupNewTagList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddTag(); return false;\" class=\"smallAdd\">Add Tag</a>\n		</fieldset>\n		<fieldset>\n	 		<legend>Conditions:</legend>\n	 		<div id=\"smartGroupNewAttributeList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddAttribute(); return false;\" class=\"smallAdd\">Add Condition</a>\n		</fieldset>\n		<p style=\"text-align: right; margin-top: 10px;\">\n			<input type=\"hidden\" name=\"smart_group_description_id\" value=\"5\" />\n			 <input type=\"button\" value=\"Cancel\" onclick=\"SmartGroup.newCancel(); return false;\" />\n			 <input type=\"submit\" name=\"Submit\" value=\"Save\" />\n		 </p>\n	 </div></div>\n</form>";
+					SmartGroup.attributeDescriptions.push(['29', 'Address']);
+					SmartGroup.attributeDescriptions.push(['28', 'Any Condition']);
+					SmartGroup.attributeDescriptions.push(['31', 'Notes']);
+					SmartGroup.attributeDescriptions.push(['32', 'Owner Username']);
+					SmartGroup.attributeDescriptions.push(['30', 'Title']);
+				SmartGroup.newContents = "\n<form action=\"../smart_group/create\" method=\"post\" onsubmit=\"return SmartGroup.newSubmit(this);\">\n	<div class=\"roundtl highlighted\"><div class=\"roundtr\">\n		<table><tr>\n			<td class=\"dinger\">\n	 		</td>\n			<td>\n				<a href=\"#\" class=\"smartGroup folder highlighted\" onclick=\"return false;\">\n								New Smart Bookmark Folder				 </a>\n	 		</td>\n			<td class=\"showInfo\">\n	 		</td>\n		</tr></table>\n	</div></div>\n	<div class=\"roundbl groupInfo\"><div class=\"roundbr groupInfoMargin\">\n		 Name:\n		<input id=\"smart_group_name\" name=\"smart_group_name\" style=\"width: 98%; display: block;\" type=\"text\" value=\"New Smart Bookmark Folder\" />\n		 <br />\n		 Match All: \n		<fieldset>\n	 		<legend>Tags:</legend>\n	 		<div id=\"smartGroupNewTagList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddTag(); return false;\" class=\"smallAdd\">Add Tag</a>\n		</fieldset>\n		<fieldset>\n	 		<legend>Conditions:</legend>\n	 		<div id=\"smartGroupNewAttributeList\"></div>\n			<a href=\"#\" onclick=\"SmartGroup.newAddAttribute(); return false;\" class=\"smallAdd\">Add Condition</a>\n		</fieldset>\n		<p style=\"text-align: right; margin-top: 10px;\">\n			<input type=\"hidden\" name=\"smart_group_description_id\" value=\"6\" />\n			 <input type=\"button\" value=\"Cancel\" onclick=\"SmartGroup.newCancel(); return false;\" />\n			 <input type=\"submit\" name=\"Submit\" value=\"Save\" />\n		 </p>\n	 </div></div>\n</form>";
 	//]]>
 	</script>
 </div></div>
-
-<div id="addGroupDialog" style="margin: 2px 0pt 0pt; display: none;">
-	<div>
-		<form action="/mail/create_mailbox" method="post" onsubmit="return StandardGroup.newSubmit(this);">			<div class="roundtl highlighted"><div class="roundtr">
-				<table>
-					<tbody><tr>
-						<td class="dinger">
-						</td>
-						<td>
-							<a href="#" class="folder highlighted group" onclick="return false;">
-								New Mailbox		 					 </a>
-						</td>
-						<td class="showInfo">
-						</td>
-					</tr>
-				</tbody></table>
-			</div></div>
-			<div class="roundbl groupInfo"><div class="roundbr groupInfoMargin">
-				Name:
-				<input id="group_name" name="group_name" style="width: 100%; display: block;" value="New Mail Controller" type="text">
-									<input id="parent_id" name="parent_id" value="654515" type="hidden">
-								<p style="text-align: right; margin-top: 10px;">
-					<input value="Cancel" onclick="StandardGroup.newCancel();" type="button">
-					<input name="Submit" value="Save" type="submit">
-				</p>
-			</div></div>
-		</form>	 </div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-Event.observe(window, 'load', function(event){ Mail.updateInboxUnreadCount(); });
-//]]>
-</script>
-<script type="text/javascript">
-//<![CDATA[
-new PeriodicalExecuter(function(){ Mail.updateInboxUnreadCount(); }, 120);
-//]]>
-</script>
 	</div>
 	<div id="groupsOthers" class="collapsiblePalette collapsed">
-		<h3><a href="#" onclick="CollapsiblePalette.toggle('groupsOthers');; return false;">Others' Mailboxes</a></h3>
+		<h3><a href="#" onclick="CollapsiblePalette.toggle('groupsOthers');; return false;">Others' Bookmark Folders</a></h3>
 		<div id="groupsOthersInset" class="content sidebarInset" style="display: none;">
 			
 <div id="others_groups">
@@ -397,7 +311,7 @@ new PeriodicalExecuter(function(){ Mail.updateInboxUnreadCount(); }, 120);
 						<td class="dinger">
 							<a class="collapsed" href="#" id="dinger_user_193733" onclick="GroupsBrowser.toggleUser('193733');; return false;">+</a>						</td>
 						<td>
-							<a class="folder user" href="#" onclick="GroupsBrowser.toggleUser('193733');; return false;" style="background-color: transparent;">John Smith</a>						 </td>
+							<a class="folder user" href="#" onclick="GroupsBrowser.toggleUser('193733');; return false;" style="background-color: transparent;">John Neumann</a>						 </td>
 						<td id="groups_user_spinner_193733" style="display: none; width: 16px;">
 							<div class="loadingMessageSmall"></div>
 						</td>
@@ -511,24 +425,50 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 </div>
 	
 <ul style="left: 328px;" id="Toolbar">
-			<li class="actionCompose"><a href="../mail/compose">Compose</a></li>
-						 			<li class="actionCopy"><a class="disabled" href="#" id="actionCopyLink" onclick="return Drawers.toggleBrowser('Copy'); return false;">Copy</a></li>
-				<li class="actionMove"><a class="disabled" href="#" id="actionMoveLink" onclick="return Drawers.toggleBrowser('Move'); return false;">Move</a></li>
-		 		<li class="actionDelete">
-	<a class="disabled" href="#" id="actionDeleteLink" onclick="return Toolbar.deleteList('../mail/delete');; return false;" title="Delete all selected items.">Delete</a>
+			<li class="actionNew"><a href="../bookmarks/create">New</a></li>
+					 		<li class="actionCopyDirect">
+<form action="../bookmarks/copy" id="toolbarCopyForm" method="post" onsubmit="return Toolbar.bookmarksCopySubmit(this);" style="display: inline;">	 <span id="CopyLink">
+		<input id="toolbarCopyIDs" name="ids" value="" type="hidden">
+		<input id="toolbarCopySubmitButton" style="display: none;" type="submit">
+		<a class="disabled" id="actionCopyLink" href="#" onclick="$('toolbarCopySubmitButton').click(); return false;" title="Copy all selected items to your Bookmarks">Copy</a>
+	</span>
+</form></li>			
+				<li class="actionDelete">
+	<a class="disabled" href="#" id="actionDeleteLink" onclick="return Toolbar.deleteList('../bookmarks/delete');; return false;" title="Delete all selected items.">Delete</a>
 </li>
-		</ul>
+					 <li class="actionTools"><a href="#" id="actionBookmarksBookmarkletLink" onclick="return Drawers.toggle('BookmarksBookmarklet');; return false;">Get the Joyent Bookmarks Bookmarklet</a></li>
+	</ul>
 	<div style="left: 328px;" id="contentPane">
 		
 <div id="Drawers">
-			<div class="drawerContent" id="drawerCopy" style="display: none;">
-<form action="../mail/copy" id="toolbarCopyForm" method="post" style="display: inline;">	<input id="toolbarCopyGroupID" name="new_group_id" value="" type="hidden">
-	<input id="toolbarCopyIDs" name="ids" value="" type="hidden">
-</form><div id="CopyBrowser" class="browser_placeholder" style="display: none;"> </div></div>
-				<div class="drawerContent" id="drawerMove" style="display: none;">
-<form action="../mail/move" id="toolbarMoveForm" method="post" style="display: inline;">	<input id="toolbarMoveGroupID" name="new_group_id" value="" type="hidden">
-	<input id="toolbarMoveIDs" name="ids" value="" type="hidden">
-</form><div id="MoveBrowser" class="browser_placeholder" style="display: none;"> </div></div>
+				<div class="drawerContent" id="drawerBookmarksBookmarklet" style="display: none;">
+<h5>Browser Bookmarklet</h5>
+<fieldset>
+	<table border="0" width="100%">
+		<tbody><tr>
+			<td style="border-right: 1px solid rgb(177, 177, 177); padding: 0pt 1em 0pt 0pt; vertical-align: top;" width="50%">
+				<h3>What is a bookmarklet?</h3>
+				<p>A link you add to your browser's bookmarks toolbar.</p>
+				<br>
+				<h3>And what does it do?</h3>
+				<p>This bookmarklet helps you quickly bookmark a page while you're browsing the web.</p>
+			</td>
+			<td style="padding: 0pt 0pt 0pt 1em; vertical-align: top;" width="50%">
+				<h3>Okay, I want it</h3>
+				<p>
+					Drag this link up to your bookmarks toolbar:
+					<a href="javascript:location.href='../bookmarks/create?uri='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'&via=bookmarklet'" class="buttonStandard" style="width: 9em;"><div class="buttonStandardLeft"><div class="buttonStandardRight"><div class="buttonStandardBG"><span class="">+Bookmark</span></div></div></div></a>
+				</p>
+				<br>
+				<h3>You're done</h3>
+				<p>Just click it when you want to bookmark a page you're looking at.</p>
+			</td>
+		</tr>
+	</tbody></table>
+</fieldset>
+<div class="drawerButtons">
+	<input value="Done" onclick="Drawers.hide('BookmarksBookmarklet');" type="button">
+</div></div>
 	</div>
 		<div id="contentWrapper">
 			
@@ -542,10 +482,10 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 <div>
 	<ul class="reportBoxHeader">
 		<li>
-			<strong>Inbox</strong>
+			<strong>Bookmarks</strong>
 			•
-						<span id="paginationTotalCount">1</span>
-			messages
+						<span id="paginationTotalCount">2</span>
+			bookmarks
 		</li>
 		<li class="right arrowNext">
 			
@@ -559,58 +499,79 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 </div>
 	<table id="tableList" class="tableList">
 		<colgroup>
-			<col style="width: 6%;">
-			<col style="width: 6%;">
-			<col style="width: 6%;">
-			<col style="width: 20%;">
-			<col style="width: 36%;">
-			<col style="width: 20%;">
-			<col style="width: 6%;">
+			<col style="width: 30px;">
+			<!--<col style="width:116px;" />-->
+			<col>
+			<col>
+			<col style="width: 116px;">
+						<col style="width: 70px;">
+			<col style="width: 40px;">
 		</colgroup>
-		<thead>
+		 <thead>
 			<tr>
 				<th class="checkBox" align="center"><div id="listCheckboxToggle" class="none" style="text-align: center;"><a href="#" onclick="JoyentPage.setItemCheckboxes(); return false;" title="Click to toggle your selection.">Toggle</a></div></th>
-				<th class="seen unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=seen" class="status" title="Read status">Status</a></th>
-				<th class="has_attachments unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=has_attachments" class="attachments" title="Message has attachments?">Attachments</a></th>
-									<th class="unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=sender">From</a></th>
-								<th class="unsorted"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=subject">Subject</a></th>
-				<th class="listedByDescending"><a href="../mail/set_sort_order?sort_order=ASC&amp;sort_field=date">Date</a></th>
+				<!--<th class="thumbnail">Site Image</th>-->
+				<th class="unsorted"><a href="../bookmarks/set_sort_order?sort_order=ASC&amp;sort_field=title">Title</a></th>
+				<th class="unsorted"><a href="../bookmarks/set_sort_order?sort_order=ASC&amp;sort_field=url">Address</a></th>
+				<th class="listedByDescending"><a href="../bookmarks/set_sort_order?sort_order=ASC&amp;sort_field=created_at">Date Added</a></th>
+								<th class="jumpTos">Link</th>
 				<th class="detailView"><span>Peek</span></th>
 			</tr>
 		</thead>
 		<tbody>
-							<tr id="message_52528911_tr" itemdomid="message_52528911" class="itemRow evenRow">
-			 		<td class="checkbox">
-				 		<input class="listCheckbox" id="message_52528911_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="message_52528911" type="checkbox">
-			 		</td>
-					<td class="statusCol">
-						 <a href="../mail/inbox/52528911" id="status_icon_message_52528911">
-							 
-						</a>
+							<tr id="bookmark_115305_tr" itemdomid="bookmark_115305" class="itemRow evenRow">
+					<td class="checkbox">
+						<input class="listCheckbox" id="bookmark_115305_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="bookmark_115305" type="checkbox">
 					</td>
-					<td class="enclosure">
-						
-							<img alt="Enclosure" src="../images/icons/enclosure.png">
-						
+					<!--<td class="siteImage" style="height: 84px; padding: 2px;">
+						 <a href="../bookmarks/115305/show"><img src="/images/bookmarks/cameraShy.png" style="width: 110px;" /></a>
+					</td>-->
+					<td class="title" style="height: 100%;">
+						 <a href="../bookmarks/115305/show" class="">Domain7</a>
 					</td>
-			 		<td>
-													 <a href="../mail/inbox/52528911"><span title="&lt;john@example.com&gt;">John | My Company Name</span></a>
-											</td>
-			 		<td>
-						<a href="../mail/inbox/52528911">Re: Your Joyent Connector Account</a>
+					<td class="url" style="height: 100%;">
+						 <em><a href="../bookmarks/115305/show" class=""><span style="color: grey;">http://www.domain7.com/</span></a></em>
 					</td>
-			 		<td>
-						<a href="../mail/inbox/52528911">about 3 hours ago</a>
+					<td class="dateAdded">
+						<a href="../bookmarks/115305/show">1 minute ago</a>
 					</td>
-			 		<td id="message_52528911_td_details_icon" class="details">
-						<a href="#" onclick="PeekView.toggle('message_52528911', '../mail/654515/52528911?update_id=message_52528911_td_details'); return false;">Details</a>
-			 		</td>
-		 		</tr>
-		 		<tr id="message_52528911_tr_details" itemdomid="message_52528911" style="display: none;" class="evenRow">
-			 		<td id="message_52528911_td_details" colspan="7" class="Details"></td>
+										<td class="goLink">
+						 <a href="http://www.domain7.com/" button_class="jumpTo" class="buttonStandard" style="width: 55px;" target="_blank"><div class="buttonStandardLeft"><div class="buttonStandardRight"><div class="buttonStandardBG"><span class="jumpTo">Go</span></div></div></div></a>
+					</td>
+					<td id="bookmark_115305_td_details_icon" class="details">
+						<a href="#" onclick="PeekView.toggle('bookmark_115305', '../bookmarks/115305/show?update_id=bookmark_115305_td_details'); return false;">Details</a>
+					</td>
 				</tr>
-			
-		</tbody>
+				<tr id="bookmark_115305_tr_details" itemdomid="bookmark_115305" style="display: none;" class="evenRow">
+					<td id="bookmark_115305_td_details" colspan="6" class="Details"></td>
+				</tr>
+			 				<tr id="bookmark_115291_tr" itemdomid="bookmark_115291" class="itemRow oddRow">
+					<td class="checkbox">
+						<input class="listCheckbox" id="bookmark_115291_list_checkbox" onclick="JoyentPage.toggleItemCheckbox(this);" itemdomid="bookmark_115291" type="checkbox">
+					</td>
+					<!--<td class="siteImage" style="height: 84px; padding: 2px;">
+						 <a href="../bookmarks/115291/show"><img src="/images/bookmarks/cameraShy.png" style="width: 110px;" /></a>
+					</td>-->
+					<td class="title" style="height: 100%;">
+						 <a href="../bookmarks/115291/show" class="">Joyent Connector</a>
+					</td>
+					<td class="url" style="height: 100%;">
+						 <em><a href="../bookmarks/115291/show" class=""><span style="color: grey;">../</span></a></em>
+					</td>
+					<td class="dateAdded">
+						<a href="../bookmarks/115291/show">about 2 hours ago</a>
+					</td>
+										<td class="goLink">
+						 <a href="../" button_class="jumpTo" class="buttonStandard" style="width: 55px;" target="_blank"><div class="buttonStandardLeft"><div class="buttonStandardRight"><div class="buttonStandardBG"><span class="jumpTo">Go</span></div></div></div></a>
+					</td>
+					<td id="bookmark_115291_td_details_icon" class="details">
+						<a href="#" onclick="PeekView.toggle('bookmark_115291', '../bookmarks/115291/show?update_id=bookmark_115291_td_details'); return false;">Details</a>
+					</td>
+				</tr>
+				<tr id="bookmark_115291_tr_details" itemdomid="bookmark_115291" style="display: none;" class="oddRow">
+					<td id="bookmark_115291_td_details" colspan="6" class="Details"></td>
+				</tr>
+					 </tbody>
 	</table>
 </div>
 		</div>
@@ -619,15 +580,40 @@ Event.observe(window, 'load', function(event){ new Ajax.Autocompleter('tag_name'
 	<div id="modalDialog"><div id="lbLoadMessage"></div></div>
 	<script type="text/javascript">
 	//<![CDATA[
-		Joyent.applicationName = 'mail';
-		Joyent.groupName = 'Mailbox';
+		Joyent.applicationName = 'bookmarks';
+		Joyent.groupName = 'Bookmark Folder';
 		Joyent.viewKind = 'list';
-		Item.create({ domId: 'message_52528911', arId: '52528911', arType: 'Message', userDomId: 'user_193635', selected: false, canEdit: true, canCopy: true, canMove: true, canDelete: true, mustConfirmDelete: false });
-User.create({ domId: 'user_193635', arId: 193635, personDomId: 'person_1510069', username: 'jane', fullName: 'Jane%20Doe', sortName: 'Doe%20Jane%20', current: true, selected: true });
-User.create({ domId: 'user_193733', arId: 193733, personDomId: 'person_1510167', username: 'john', fullName: 'John%20Smith', sortName: 'Smith%20John%20', current: false, selected: false });
-		Tag.create({ domId: 'tag_90217', arId: 90217, name: 'CSS' });
+		Item.create({ domId: 'bookmark_115305', arId: '115305', arType: 'Bookmark', userDomId: 'user_193635', selected: false, canEdit: true, canCopy: true, canMove: false, canDelete: true, mustConfirmDelete: false });
+Item.create({ domId: 'bookmark_115291', arId: '115291', arType: 'Bookmark', userDomId: 'user_193635', selected: false, canEdit: true, canCopy: true, canMove: false, canDelete: true, mustConfirmDelete: false });
+Tagging.create({ domId: 'tagging_613999', tagDomId: 'tag_90259', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_614013', tagDomId: 'tag_90273', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_614027', tagDomId: 'tag_90287', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_614041', tagDomId: 'tag_90301', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_614055', tagDomId: 'tag_90315', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_614069', tagDomId: 'tag_90329', itemDomId: 'bookmark_115305', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_613943', tagDomId: 'tag_90217', itemDomId: 'bookmark_115291', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_613957', tagDomId: 'tag_90231', itemDomId: 'bookmark_115291', userDomId: 'user_193635' });
+Tagging.create({ domId: 'tagging_613985', tagDomId: 'tag_90245', itemDomId: 'bookmark_115291', userDomId: 'user_193635' });
+Tag.create({ domId: 'tag_90259', arId: 90259, name: 'Web' });
+Tag.create({ domId: 'tag_90273', arId: 90273, name: 'Developers' });
+Tag.create({ domId: 'tag_90287', arId: 90287, name: 'Designers' });
+Tag.create({ domId: 'tag_90301', arId: 90301, name: 'Marketing' });
+Tag.create({ domId: 'tag_90315', arId: 90315, name: 'Strategy' });
+Tag.create({ domId: 'tag_90329', arId: 90329, name: 'Application' });
+Tag.create({ domId: 'tag_90217', arId: 90217, name: 'CSS' });
 Tag.create({ domId: 'tag_90231', arId: 90231, name: 'Design' });
 Tag.create({ domId: 'tag_90245', arId: 90245, name: 'Open%20Source' });
+User.create({ domId: 'user_193635', arId: 193635, personDomId: 'person_1510069', username: 'jane', fullName: 'Jane%20Doe', sortName: 'Doe%20Jane%20', current: true, selected: true });
+User.create({ domId: 'user_193733', arId: 193733, personDomId: 'person_1510167', username: 'john', fullName: 'John%20Neumann', sortName: 'Neumann%20John%20', current: false, selected: false });
+		Tag.create({ domId: 'tag_90329', arId: 90329, name: 'Application' });
+Tag.create({ domId: 'tag_90217', arId: 90217, name: 'CSS' });
+Tag.create({ domId: 'tag_90231', arId: 90231, name: 'Design' });
+Tag.create({ domId: 'tag_90287', arId: 90287, name: 'Designers' });
+Tag.create({ domId: 'tag_90273', arId: 90273, name: 'Developers' });
+Tag.create({ domId: 'tag_90301', arId: 90301, name: 'Marketing' });
+Tag.create({ domId: 'tag_90245', arId: 90245, name: 'Open%20Source' });
+Tag.create({ domId: 'tag_90315', arId: 90315, name: 'Strategy' });
+Tag.create({ domId: 'tag_90259', arId: 90259, name: 'Web' });
 		Event.observe(window, 'load', function(event){ JoyentPage.refresh(); });
 		Event.observe(window, 'load', function(event){ SidebarResizer.refresh(); });
 		$$('textarea').each(function(element){ new ResizingTextArea(element); });
