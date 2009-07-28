@@ -33,7 +33,7 @@ $Id$
 		text-align: left;
 		padding: 0;
 		background-color: #f5f5f5;
-		background-image: url(/images/bg/warningBGGray.jpg);
+		background-image: url(../images/bg/warningBGGray.jpg);
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 	}
@@ -44,16 +44,16 @@ $Id$
 		background-position: 50% 35px;
 	}
 	.loading {	
-		background-image: url(/images/animation/loading48Grey.gif);
+		background-image: url(../images/animation/loading48Grey.gif);
 	}
 	.warningDialog {	
-		background-image: url(/images/icons/attention48.png);
+		background-image: url(../images/icons/attention48.png);
 	}
 	.success {	
-		background-image: url(/images/icons/check48.png);
+		background-image: url(../images/icons/check48.png);
 	}
 	.viewUsersStuff {	
-		background-image: url(/images/icons/userSearch.png);
+		background-image: url(../images/icons/userSearch.png);
 	}
 	.loading h4, .warningDialog h4, .success h4, .viewUsersStuff h4 {	
 		margin:0 0 0.5em 0;
@@ -139,7 +139,7 @@ $Id$
 		padding: 0;
 		width: 48px;
 		height: 48px;
-		background: #FFF url(/images/icons/unavailableUserIcon.png) 50% 50% no-repeat;
+		background: #FFF url(../images/icons/unavailableUserIcon.png) 50% 50% no-repeat;
 		}
 /* List View ------------------------------------ */
 
@@ -297,21 +297,21 @@ $Id$
 			th.subject a:hover, 		th.dateSent a:hover		th.name a:hover, th.unsorted a:hover {
 		text-decoration: none;
 		background: transparent;
-		background-image: url(/images/icons/listedByUpArrow.png) !important;
+		background-image: url(../images/icons/listedByUpArrow.png) !important;
 		background-repeat: no-repeat;
 		background-position: 98% 50%;
 	}
 	#contentWrapper .listedByDescending a, 
 	#contentWrapper .listedByAscending a:hover, 
 	.listedByDescending span {
-		background-image: url(/images/icons/listedByDownArrow.png) !important;
+		background-image: url(../images/icons/listedByDownArrow.png) !important;
 		background-repeat: no-repeat;
 		background-position: 98% 50%;
 	}
 	#contentWrapper .listedByAscending a, 
 	#contentWrapper .listedByDescending a:hover, 
 	.listedByAscending span {
-		background-image: url(/images/icons/listedByUpArrow.png) !important;
+		background-image: url(../images/icons/listedByUpArrow.png) !important;
 		background-repeat: no-repeat;
 		background-position: 98% 50%;
 	}
@@ -336,7 +336,7 @@ $Id$
 		width: 32px;
 		display: block;
 		margin: 0 auto;
-		background-image: url(/images/icons/info.png);
+		background-image: url(../images/icons/info.png);
 		background-repeat: no-repeat;
 	}
 
@@ -393,7 +393,7 @@ $Id$
 /* Comments ---------------------------------------------- */
 	
 	.CommentsExpanded h3, .CommentsCollapsed h3 {
-		background-image: url(/images/bg/commentsHeader.png);
+		background-image: url(../images/bg/commentsHeader.png);
 		background-position: left top;
 		padding-top: 6px;
 		background-repeat: no-repeat;
@@ -408,10 +408,10 @@ $Id$
 		color: #000 !important;
 		}
 	.CommentsExpanded h3 a  {
-		background-image: url(/images/icons/commentBubble16-down.png);
+		background-image: url(../images/icons/commentBubble16-down.png);
 		}
 	.CommentsCollapsed h3 a {	
-		background-image: url(/images/icons/commentBubble16-up.png);	
+		background-image: url(../images/icons/commentBubble16-up.png);	
 		}
 	#comments {
 		padding: 1em 0;
@@ -428,14 +428,14 @@ $Id$
 		color: #000;
 		padding: 0 0 0.85em 16px;
 		margin: 0 0 0 51px;
-		background-image: url(/images/icons/commentBubble12.gif);
+		background-image: url(../images/icons/commentBubble12.gif);
 		background-repeat: no-repeat;
 		background-position: 0 2px;
 		}
 	.commentInfoForm {
 		color: #000;
 		padding: 0 0 0 16px;
-		background-image: url(/images/icons/commentBubble12.gif);
+		background-image: url(../images/icons/commentBubble12.gif);
 		background-repeat: no-repeat;
 		background-position: 0px 50%;
 		}
@@ -465,25 +465,25 @@ $Id$
 
 
 	.loadingMessageSmall {	
-		background-image: url(/images/animation/loading16.gif);
+		background-image: url(../images/animation/loading16.gif);
 		background-repeat: no-repeat;
 		background-position: 20px 50%;
 		padding: 1em 0 1em 38px;
 		}
 	.loadingMessageLarge {
-		background-image: url(/images/animation/loading48.gif);
+		background-image: url(../images/animation/loading48.gif);
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		height:120px;
 		}
 	.loadingSmallBlue {	
-		background-image: url(/images/animation/loading16Blue.gif);
+		background-image: url(../images/animation/loading16Blue.gif);
 		background-repeat: no-repeat;
 		background-position: 20px 50%;
 		padding: 1em 0 1em 38px;
 		}
 	.loadingSmallGrey {	
-		background-image: url(/images/animation/loading16Grey.gif);
+		background-image: url(../images/animation/loading16Grey.gif);
 		background-repeat: no-repeat;
 		background-position: 20px 50%;
 		padding: 1em 0 1em 38px;
@@ -502,19 +502,19 @@ $Id$
 		line-height:16px;
 		background-repeat: no-repeat;
 		background-position: left center;
-		background-image: url(/images/icons/goTo.png);
+		background-image: url(../images/icons/goTo.png);
 		}
 	.toGoogle {	
-		background-image: url(/images/icons/goToGoogle.png);
+		background-image: url(../images/icons/goToGoogle.png);
 		}
 	.toSkype {	
-		background-image: url(/images/icons/goToSkype.png);
+		background-image: url(../images/icons/goToSkype.png);
 		}
 	.toJajah {
-		background-image: url(/images/icons/goToJajah.png);
+		background-image: url(../images/icons/goToJajah.png);
 		}
 	.toContacts {	
-		background-image: url(/images/icons/docs/16/vcf.png);
+		background-image: url(../images/icons/docs/16/vcf.png);
 		}
 
 /*
@@ -606,7 +606,7 @@ $Id$
 	}
 	#drawerCalendarOverlay li a.tag, #drawerCalendarOverlay ul.tagsAssigned li a.tag {
 		background-repeat: no-repeat;
-		background-image: url(/images/icons/tagBits.png);
+		background-image: url(../images/icons/tagBits.png);
 	}
 	#drawerCalendarOverlay ul.tagList li a.tag {
 		-moz-border-radius: .9em 0 0 .9em;
@@ -655,7 +655,7 @@ $Id$
 		color: #393A3C;
 	}
 	.autocompleteMenu ul li.selected {
-		background: #2A5FCF url(/images/bg/highlightBG.png) top left repeat-x;
+		background: #2A5FCF url(../images/bg/highlightBG.png) top left repeat-x;
 		color: #CADEF7;
 	}
 	.autocompleteMenu ul li span.autoCompleteHighlite {
@@ -672,7 +672,7 @@ $Id$
 	#Drawers .drawerContent {
 		background-color: #F9F9F9;
 		padding: 12px 12px 20px 12px;
-		background-image: url(/images/bg/drawer.png);
+		background-image: url(../images/bg/drawer.png);
 		background-repeat: repeat-x;
 		background-position: 0 0;
 		border-color: #AAA;
@@ -728,31 +728,31 @@ $Id$
 	.workspace {
 		margin:0; 
 		display:block;
-		background-image: url(/images/icons/workspace.png);
+		background-image: url(../images/icons/workspace.png);
 	}
 	.currentTime {
-		background-image: url(/images/icons/clock.png);
+		background-image: url(../images/icons/clock.png);
 	}
 	.files_report {
-		background-image: url(/images/icons/groupAllFiles.png);
+		background-image: url(../images/icons/groupAllFiles.png);
 	}
 	.recentComments {
-		background-image: url(/images/icons/commentBubble16.png);
+		background-image: url(../images/icons/commentBubble16.png);
 	}
 	.eventsReport, .calendar_report {
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 	}
 	.smart_group {
-		background-image: url(/images/icons/groupFolderSmart.png);
+		background-image: url(../images/icons/groupFolderSmart.png);
 	}
 	.unreadMessages {
-		background-image: url(/images/icons/groupMail.png);
+		background-image: url(../images/icons/groupMail.png);
 	}
 	.bookmarks_report {
-		background-image: url(/images/icons/bookmark.png);
+		background-image: url(../images/icons/bookmark.png);
 	}
 	.lists_report {
-		background-image: url(/images/icons/groupAllLists.png);
+		background-image: url(../images/icons/groupAllLists.png);
 	}
 		
 	.reportBody {
@@ -783,7 +783,7 @@ $Id$
 			}
 		table.notificationsList tr td.Details {
 			background-color: #FFF;
-			background-image: url(/images/bg/peekShadow.png);
+			background-image: url(../images/bg/peekShadow.png);
 			background-repeat: repeat-x;
 			background-position: 0 0;
 			}
@@ -886,7 +886,7 @@ $Id$
 			-moz-border-radius: .4em .4em 0 0;
 			-webkit-border-top-left-radius: .4em;
 			-webkit-border-top-right-radius: .4em;
-			background-image: url(/images/bg/reportHeaderBG.png);
+			background-image: url(../images/bg/reportHeaderBG.png);
 			background-repeat: repeat-x;
 		}
 		ul.reportBoxHeader li {
@@ -900,7 +900,7 @@ $Id$
 			height: 20px;
 			display: block;
 			text-indent: -3000px;
-			background-image: url(/images/icons/reportHeaderIcons.png);
+			background-image: url(../images/icons/reportHeaderIcons.png);
 		}
 		.arrowPrev a {
 			background-position: -96px -2px;
@@ -925,13 +925,13 @@ $Id$
 		/* header Icons / report ----------------------- */
 			
 		.events {		
-			background-image: url(/images/icons/calendar16.png);
+			background-image: url(../images/icons/calendar16.png);
 		}
 		.messages {		
-			background-image: url(/images/icons/mailbox.png);
+			background-image: url(../images/icons/mailbox.png);
 		}
 		.joyent_files {		
-			background-image: url(/images/icons/filesAll.png);
+			background-image: url(../images/icons/filesAll.png);
 		}
 			
 			
@@ -950,14 +950,14 @@ $Id$
 			position: absolute;
 			text-indent: -3000px;
 			cursor: pointer;
-			background-image: url(/images/icons/reportHeaderIcons.png);
+			background-image: url(../images/icons/reportHeaderIcons.png);
 			}
 		* html .reportHeader .hideReport,
 		* html .reportHeader .showReport,
 		* html .reportHeader .reload,
 		* html .reportHeader .remove,
 		* html .reportHeader .goToReport {		
-			background-image: url(/images/ie/reportHeaderIcons.gif);
+			background-image: url(../images/ie/reportHeaderIcons.gif);
 			}
 		.reportHeader .showReport {		
 			background-position: -48px 0px;
@@ -1095,7 +1095,7 @@ $Id$
 		border-right: 1px solid #c3c3c3;
 		border-bottom: 1px solid #ddd;
 		background-color: #FFF;
-		background-image: url(/images/bg/fieldbg.gif);
+		background-image: url(../images/bg/fieldbg.gif);
 		background-repeat: repeat-x;
 		}
 	input.textInput {
@@ -1253,7 +1253,7 @@ $Id$
 /* info ------------------------------------*/
 
 	.info, .info2, .info3, .info4 {	
-		background-image: url(/images/bg/infoBG.png);
+		background-image: url(../images/bg/infoBG.png);
 		background-repeat: no-repeat;
 	}
 	.info4 {
@@ -1288,10 +1288,10 @@ $Id$
 		padding: 2em 2em 2em 5.5em;
 	}
 	.infoError {
-		background-image: url(/images/icons/attention32.png);
+		background-image: url(../images/icons/attention32.png);
 	}
 	.infoMessage {
-		background-image: url(/images/icons/ok32.png);
+		background-image: url(../images/icons/ok32.png);
 	}
 		
 	.info .acceptDecline {
@@ -1303,7 +1303,7 @@ $Id$
 	}
 		
 	.yes, .no {	
-		background-image: url(/images/icons/yesNo.png);
+		background-image: url(../images/icons/yesNo.png);
 		padding: 2px 2px 2px 16px;
 		background-repeat: no-repeat;
 		}
@@ -1337,7 +1337,7 @@ $Id$
 		border-width: 1px;
 		border-style: solid;
 		margin: 10px 0 0 0;
-		background-image: url(/images/bg/warningBG.png);
+		background-image: url(../images/bg/warningBG.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		}
@@ -1359,7 +1359,7 @@ $Id$
 		border-width: 1px;
 		border-style: solid;
 		margin: 10px 0 0 0;
-		background-image: url(/images/bg/warningInline.png);
+		background-image: url(../images/bg/warningInline.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		}
@@ -1372,7 +1372,7 @@ $Id$
 		background-position: -500px 0;
 		text-indent: -3000px;
 		display: block;
-		background-image: url(/images/icons/addRemove.png);
+		background-image: url(../images/icons/addRemove.png);
 		background-repeat: no-repeat;
 	}
 	.deleteItem:hover {
@@ -1383,7 +1383,7 @@ $Id$
 		margin: 0px 0px 0px 0px;
 		padding: 2px 3px 2px 16px;
 		white-space: nowrap;
-		background-image: url(/images/icons/addRemove.png);
+		background-image: url(../images/icons/addRemove.png);
 		color: #000;
 		background-position: 0 0;
 	}
@@ -1402,19 +1402,19 @@ $Id$
 	}
 	.buttonStandardLeft {
 		/* firstwrapper */
-		background-image: url(/images/bg/buttons/buttonStandardLeft.png);
+		background-image: url(../images/bg/buttons/buttonStandardLeft.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		margin-right: auto;
 		margin-left: auto;
 	}
 	.buttonStandardRight {
-		background-image: url(/images/bg/buttons/buttonStandardRight.png);
+		background-image: url(../images/bg/buttons/buttonStandardRight.png);
 		background-repeat: no-repeat;
 		background-position: right 0;
 	}
 	.buttonStandardBG {
-		background-image: url(/images/bg/buttons/buttonStandardBG.png);
+		background-image: url(../images/bg/buttons/buttonStandardBG.png);
 		background-repeat: repeat-x;
 		background-position: 0 0;
 		margin: 0 11px;
@@ -1453,23 +1453,23 @@ $Id$
 	
 	
 	.addTag {
-		background-image: url(/images/icons/tag.png);
+		background-image: url(../images/icons/tag.png);
 		padding-left: 19px !important;
 	}
 	.jumpTo {
-		background-image: url(/images/icons/jumpTo.png);
+		background-image: url(../images/icons/jumpTo.png);
 		padding-left: 19px !important;
 	}
 	.setAccess {
-		background-image: url(/images/icons/user.png);
+		background-image: url(../images/icons/user.png);
 		padding-left: 19px !important;
 	}
 	.notifySomeone {
-		background-image: url(/images/icons/notifyBubble.png);
+		background-image: url(../images/icons/notifyBubble.png);
 		padding-left: 19px !important;
 	}
 	.download {
-		background-image: url(/images/icons/download.png);
+		background-image: url(../images/icons/download.png);
 		padding-left: 19px !important;
 	}
 	
@@ -1550,7 +1550,7 @@ $Id$
 		border-spacing: 0px 2px
 	}
 	table.userList .viewIcon {
-		background-image: url(/images/icons/eye.png);
+		background-image: url(../images/icons/eye.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		width: 16px;
@@ -1560,7 +1560,7 @@ $Id$
 		float: right;
 	}
 	table.userList .notifyIcon {
-		background-image: url(/images/icons/notifyBubble.png);
+		background-image: url(../images/icons/notifyBubble.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		width: 16px;
@@ -1575,7 +1575,7 @@ $Id$
 		display: block;
 		text-indent: -3000px;
 		margin: 2px 2px 0px 2px;
-		background-image: url(/images/icons/tdIcons.png);
+		background-image: url(../images/icons/tdIcons.png);
 		background-repeat: no-repeat;
 		cursor: pointer;
 	}
@@ -1652,7 +1652,7 @@ $Id$
 	}
 	#tagsSidebar .tagInfo, #tagsSidebar li a.tag, #tagsSidebar ul.tagsAssigned li a.tag {
 		background-repeat: no-repeat;
-		background-image: url(/images/icons/tagBits.png);
+		background-image: url(../images/icons/tagBits.png);
 	}
 	#tagsSidebar ul.tagList li a.tag, #tagsSidebar ul.tagList li a.tagInfo {
 		float: left;
@@ -1764,10 +1764,10 @@ $Id$
 			padding:0px 0px 0px 17px;
 			}	
 		.collapsiblePalette.expanded h3 a {
-			background: url(/images/icons/diggerDown.png) left no-repeat;
+			background: url(../images/icons/diggerDown.png) left no-repeat;
 			}
 		.collapsiblePalette.collapsed h3 a {
-			background: url(/images/icons/diggerRight.png) left no-repeat;
+			background: url(../images/icons/diggerRight.png) left no-repeat;
 			}
 		.collapsiblePalette h3 a:hover {
 			background-color: transparent;
@@ -1787,7 +1787,7 @@ $Id$
 			width:16px;
 			text-indent:-3000px;
 			display:block;
-			background-image: url(/images/icons/plus16b.png);
+			background-image: url(../images/icons/plus16b.png);
 			background-repeat: no-repeat !important;
 			background-position: 0 0;
 			padding:0px !important;
@@ -1826,7 +1826,7 @@ $Id$
 		float: right;
 		margin-right: 2px !important;
 		background-color: transparent;
-		background-image: url(/images/icons/groupInfo.png);
+		background-image: url(../images/icons/groupInfo.png);
 		background-position: 0 -16px;
 		background-repeat: no-repeat;
 		}
@@ -1851,7 +1851,7 @@ $Id$
 	}
 	#addGroup a.plus {
 		display: block;
-		background-image: url(/images/icons/addRemove.png);
+		background-image: url(../images/icons/addRemove.png);
 		background-repeat: no-repeat;
 		background-position: 0 -200px;
 		margin: 4px 0 0 19px;
@@ -1863,7 +1863,7 @@ $Id$
 		background-position: 0 -250px;
 	}
 	#addGroup a.minus {
-		background-image: url(/images/icons/addRemove.png);
+		background-image: url(../images/icons/addRemove.png);
 		background-position: 0 -300px;
 	}
 	#addGroup a.minus:hover {
@@ -1906,7 +1906,7 @@ $Id$
 
 		
 .roundtl, .roundtr, .roundbl, .roundbr {
-	background-image: url(/images/bg/roundCorners.png);
+	background-image: url(../images/bg/roundCorners.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	}
@@ -1968,7 +1968,7 @@ a.highlighted  {
 			.groupInfo a.move, 
 			.groupInfo a.access,
 			.groupInfo a.subscription {
-				background-image: url(/images/icons/groupInfoIcons.png);
+				background-image: url(../images/icons/groupInfoIcons.png);
 				}
 			.groupInfo a.rename {
 				background-position: 0 3px;
@@ -1996,11 +1996,11 @@ a.highlighted  {
 			}
 
 			.groupInfo a.delete {
-				background-image: url(/images/icons/addRemove.png);
+				background-image: url(../images/icons/addRemove.png);
 				background-position: -491px 3px;
 				}
 			.groupInfo a.smart {
-				background-image: url(/images/icons/gear.png);
+				background-image: url(../images/icons/gear.png);
 				background-position: 9px 3px;
 				}
 
@@ -2024,11 +2024,11 @@ td.dinger .collapsed, td.dinger .expanded {
 	display: block;
 	text-indent: -3000px;
 	background-repeat: no-repeat;
-	background-image: url(/images/icons/dinger.png);
+	background-image: url(../images/icons/dinger.png);
 	margin: 0 0 0 4px;
 	}
 * html td.dinger .collapsed, * html td.dinger .expanded {
-	background-image: url(/images/ie/dinger.gif);
+	background-image: url(../images/ie/dinger.gif);
 	}
 td.dinger .collapsed {
 	background-position: 0 -100px;
@@ -2114,7 +2114,7 @@ a.folder  {
 		color: #215DB3 !important;
 		display: inline !important;
 		padding: 0px 0 0px 13px;
-		background-image: url(/images/icons/smallPlus.png);
+		background-image: url(../images/icons/smallPlus.png);
 		background-repeat: no-repeat;
 		background-position: 0 2px;
 	}
@@ -2125,7 +2125,7 @@ a.folder  {
 		background-position: 0 -198px;
 	}
 	a.smallRemoveLink {	
-		background-image: url(/images/icons/smallMinus.png);
+		background-image: url(../images/icons/smallMinus.png);
 		background-repeat: no-repeat !important;
 		background-position: 0 0 !important;
 		width: 9px !important;
@@ -2156,32 +2156,32 @@ a.folder  {
 	
 
 	.events {		
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 		}
 	.messages {		
-		background-image: url(/images/icons/mailbox.png);
+		background-image: url(../images/icons/mailbox.png);
 		}
 	.joyent_files {		
-		background-image: url(/images/icons/filesAll.png);
+		background-image: url(../images/icons/filesAll.png);
 		}
 	.comments {		
-		background-image: url(/images/icons/commentBubble16.png);
+		background-image: url(../images/icons/commentBubble16.png);
 		}
 	.notifications {		
-		background-image: url(/images/icons/notifyBubble.png);
+		background-image: url(../images/icons/notifyBubble.png);
 		}
 	div#groupsSidebar .lightning {
-		background-image: url(/images/icons/lightning.gif);
+		background-image: url(../images/icons/lightning.gif);
 		}
 	.workspace {		
-		background-image: url(/images/icons/workspace.png);
+		background-image: url(../images/icons/workspace.png);
 		}
 	.user {
-		background-image: url(/images/icons/user.png);
+		background-image: url(../images/icons/user.png);
 		background-position: 0 0;
 		}
 	.currentUser {
-		background-image: url(/images/icons/userCurrent.png);
+		background-image: url(../images/icons/userCurrent.png);
 		background-position: 0 0;
 		}
 	.orangeBadge {
@@ -2189,7 +2189,7 @@ a.folder  {
 		height: 14px;
 		display: block;
 		text-indent: -3000px;
-		background-image: url(/images/icons/orangeBadges.png);
+		background-image: url(../images/icons/orangeBadges.png);
 		background-repeat: no-repeat;
 		}
 	.rss {
@@ -2286,10 +2286,10 @@ div.browserList ul {
 	white-space: nowrap;
 }
 .browserList a.defaultFolder {
-	background: url(/images/icons/folderClosed.png) 2px 50% no-repeat;
+	background: url(../images/icons/folderClosed.png) 2px 50% no-repeat;
 }
 .browserList a.fileBrowserUp {	
-	background: url(/images/icons/backToTop.png) 2px 50% no-repeat;
+	background: url(../images/icons/backToTop.png) 2px 50% no-repeat;
 }
 
 .onceClicked {
@@ -2337,7 +2337,7 @@ div.browserList ul {
 /* icons -------------------------------------------- */
 
 	#browserColumns .roundtl, #browserColumns .roundtr, #browserColumns .roundbl, #browserColumns .roundbr {
-	background-image: url(/images/bg/roundCornersOnWhite.png);
+	background-image: url(../images/bg/roundCornersOnWhite.png);
 	}
 
 	#browserColumns li a {
@@ -2346,49 +2346,49 @@ div.browserList ul {
 		font-size: .9em;
 	}
 	#browserColumns ul li.browserUserShortcut a {
-		background-image: url(/images/icons/groupUser.png);
+		background-image: url(../images/icons/groupUser.png);
 	}
 	
 	#browserColumns #app_column ul li.browserFiles a {
-		background-image: url(/images/icons/groupAllFiles.png);
+		background-image: url(../images/icons/groupAllFiles.png);
 	}
 	#browserColumns ul li.browserFiles a {
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 	}
 	
 	#browserColumns #app_column ul li.browserMail a {
-		background-image: url(/images/icons/groupMail.png);
+		background-image: url(../images/icons/groupMail.png);
 	}
 	#browserColumns ul li.browserMail a {
-		background-image: url(/images/icons/groupMail.png);
+		background-image: url(../images/icons/groupMail.png);
 	}
 	
 	#browserColumns #app_column ul li.browserPeople a {
-		background-image: url(/images/icons/groupPeople.png);
+		background-image: url(../images/icons/groupPeople.png);
 	}
 	#browserColumns ul li.browserPeople a {
-		background-image: url(/images/icons/groupPeople.png);
+		background-image: url(../images/icons/groupPeople.png);
 	}
 	
 	#browserColumns #app_column ul li.browserCalendar a {
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 	}
 	#browserColumns ul li.browserCalendar a {
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 	}
 	
 	#browserColumns #app_column ul li.browserBookmarks a {
-		background-image: url(/images/icons/bookmarkEveryones.png);
+		background-image: url(../images/icons/bookmarkEveryones.png);
 	}
 	#browserColumns ul li.browserBookmarks a {
-		background-image: url(/images/icons/bookmark.png);
+		background-image: url(../images/icons/bookmark.png);
 	}
 
 	#browserColumns #app_column ul li.browserLists a {
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 	}
 	#browserColumns ul li.browserLists a {
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 	}
 /*
 ++
@@ -2462,14 +2462,14 @@ $Id$
 		display: block;
 		text-indent: -3000px;
 		background-repeat: no-repeat;
-		background-image: url(/images/icons/dinger.png);
+		background-image: url(../images/icons/dinger.png);
 		margin: 0 0 0 5px;
 	}
 	a.listDinger {
 		background-position: 0 -200px;
 	}
 	a.dinger, a.dingerExpanded, span.dinger, span.dingerExpanded {	
-		background-image: url(/images/icons/dinger.png);
+		background-image: url(../images/icons/dinger.png);
 	}
 	a.dinger, span.dinger, a.listDinger.collapsed {	
 		background-position: 0 -100px;
@@ -2484,7 +2484,7 @@ $Id$
 		background-position: 0 -50px;
 	}
 	.downloadDoc, .downloadDoc:active {
-		background-image: url(/images/icons/downloadDoc.png);
+		background-image: url(../images/icons/downloadDoc.png);
 		background-position: 0 0;
 		margin-bottom: 4px;
 		display: block;
@@ -2493,7 +2493,7 @@ $Id$
 		background-position: 0 -50px;
 	}
 	.tip {
-		background-image: url(/images/icons/tip.png);
+		background-image: url(../images/icons/tip.png);
 		background-repeat: no-repeat;
 		background-position: left center;
 		padding: 0 0 0 16px;
@@ -2521,101 +2521,101 @@ $Id$
 		text-indent: -3000px;
 	}
 	.notify_via {
-		background-image: url(/images/icons/notify-via.png);
+		background-image: url(../images/icons/notify-via.png);
 	}
 	.notify_sms {
-		background-image: url(/images/icons/notify-sms.png);
+		background-image: url(../images/icons/notify-sms.png);
 	}
 	.notify_email {
-		background-image: url(/images/icons/notify-email.png);
+		background-image: url(../images/icons/notify-email.png);
 	}
 	.notify_im {
-		background-image: url(/images/icons/notify-im.png);
+		background-image: url(../images/icons/notify-im.png);
 	}
 
 	
 /* Icons (file types) ------------------------------------*/
 	
 	.ai  {
-		background: url(/images/icons/docs/16/ai.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/ai.png) 0 50% no-repeat;
 		}
 	.chris {
-		background: url(/images/icons/docs/16/chris.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/chris.png) 0 50% no-repeat;
 		}
 	.code {
-		background: url(/images/icons/docs/16/code.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/code.png) 0 50% no-repeat;
 		}
 	.css {
-		background: url(/images/icons/docs/16/css.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/css.png) 0 50% no-repeat;
 		}
 	.doc  {
-		background: url(/images/icons/docs/16/doc.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/doc.png) 0 50% no-repeat;
 		}
 	.file {
-		background: url(/images/icons/docs/16/text.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/text.png) 0 50% no-repeat;
 		}
 	.fla, .flv {
-		background: url(/images/icons/docs/16/fla.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/fla.png) 0 50% no-repeat;
 		}
 	.gruber {
-		background: url(/images/icons/docs/16/gruber.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/gruber.png) 0 50% no-repeat;
 		}
 	.html, .htm {
-		background: url(/images/icons/docs/16/html.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/html.png) 0 50% no-repeat;
 		}
 	.ics  {
-		background: url(/images/icons/docs/16/ics.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/ics.png) 0 50% no-repeat;
 		}
 	.indd  {
-		background: url(/images/icons/docs/16/indd.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/indd.png) 0 50% no-repeat;
 		}
 	.joyent {
-		background: url(/images/icons/docs/16/joyent.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/joyent.png) 0 50% no-repeat;
 		}
 	.jpg, .jpeg, .gif, .png, .tif, .tiff, .bmp, .raw, .psd, .eps, .ai, .ps  {
-		background: url(/images/icons/docs/16/image.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/image.png) 0 50% no-repeat;
 		}
 	.luke {
-		background: url(/images/icons/docs/16/luke.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/luke.png) 0 50% no-repeat;
 		}
 	.pdf  {
-		background: url(/images/icons/docs/16/pdf.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/pdf.png) 0 50% no-repeat;
 		}
 	.mov, .mpeg, .mpg, .mp4  {
-		background: url(/images/icons/docs/16/mov.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/mov.png) 0 50% no-repeat;
 		}
 	.mp3, .aac, .wav, .wmv, .m4a, .m4p, .m4b, .aiff, .aif {
-		background: url(/images/icons/docs/16/sound.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/sound.png) 0 50% no-repeat;
 		}
 	.ppt  {
-		background: url(/images/icons/docs/16/ppt.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/ppt.png) 0 50% no-repeat;
 		}
 	.psd  {
-		background: url(/images/icons/docs/16/psd.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/psd.png) 0 50% no-repeat;
 		}
 	.qpw  {
-		background: url(/images/icons/docs/16/qpw.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/qpw.png) 0 50% no-repeat;
 		}
 	.raw  {
-		background: url(/images/icons/docs/16/raw.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/raw.png) 0 50% no-repeat;
 		}
 	.slim, .bryan {
-		background: url(/images/icons/docs/16/bryan.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/bryan.png) 0 50% no-repeat;
 		}
 	.vcf  {
-		background: url(/images/icons/docs/16/vcf.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/vcf.png) 0 50% no-repeat;
 		}
 	.wmv  {
-		background: url(/images/icons/docs/16/wmv.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/wmv.png) 0 50% no-repeat;
 		}
 	.wpd, .wp  {
-		background: url(/images/icons/docs/16/wpd.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/wpd.png) 0 50% no-repeat;
 		}
 	.xls {
-		background: url(/images/icons/docs/16/xls.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/xls.png) 0 50% no-repeat;
 		}
 	.young, .margaret {
-		background: url(/images/icons/docs/16/margaret.png) 0 50% no-repeat;
+		background: url(../images/icons/docs/16/margaret.png) 0 50% no-repeat;
 		}
 		
 		
@@ -2623,22 +2623,22 @@ $Id$
 
 
 	.files {
-		background-image: url(/images/icons/docs/32/files.png);
+		background-image: url(../images/icons/docs/32/files.png);
 	}
 	.peep {
-		background-image: url(/images/icons/docs/32/people.png);
+		background-image: url(../images/icons/docs/32/people.png);
 	}
 	.calendar {
-		background-image: url(/images/icons/docs/32/calendar.png);
+		background-image: url(../images/icons/docs/32/calendar.png);
 	}
 	.mail {
-		background-image: url(/images/icons/docs/32/mail.png);
+		background-image: url(../images/icons/docs/32/mail.png);
 	}
 	.bookmark {
-		background-image: url(/images/icons/docs/32/bookmark.png);
+		background-image: url(../images/icons/docs/32/bookmark.png);
 	}
 	.list {
-		background-image: url(/images/icons/docs/32/list.png);
+		background-image: url(../images/icons/docs/32/list.png);
 	}
 /*
 ++
@@ -2699,7 +2699,7 @@ table.tableList tr th {
 	border-color: #DDD #DDD #D6D6D6 #DDD;
 	border-width: 0 1px 1px 0;
 	border-style: solid;
-	background-image: url(/images/bg/thBG.png);
+	background-image: url(../images/bg/thBG.png);
 	background-repeat: repeat-x;
 	background-position: left center;
 }
@@ -2724,7 +2724,7 @@ table.tableList tr td {
 	width: 16px;
 	display: block;
 	margin: 2px auto 0 auto !important;
-	background-image: url(/images/icons/peek.png);
+	background-image: url(../images/icons/peek.png);
 	background-repeat: no-repeat;
 	}
 .details a {	
@@ -2767,7 +2767,7 @@ table.tableList tr td {
 		width: 12px;
 		margin: 4px auto 0 auto !important;
 		background-repeat: no-repeat;
-		background-image: url(/images/icons/tdIcons.png);
+		background-image: url(../images/icons/tdIcons.png);
 		}
 		
 	#listCheckboxToggle.all a {
@@ -2858,7 +2858,7 @@ table.tableList tr td {
 		}
 			
 	th.detailView span {
-		background-image: url(/images/icons/thInfo.png);
+		background-image: url(../images/icons/thInfo.png);
 		background-repeat: no-repeat;
 		background-position: center center;
 		display: block;
@@ -2886,7 +2886,7 @@ table.tableList tr td {
 		background-color: #E8E8E7;
 		background-position: left top;
 		overflow: hidden;
-		background-image: url(/images/bg/reportSubHeaderBG.png);
+		background-image: url(../images/bg/reportSubHeaderBG.png);
 	}
 	.reportHeader h3 {		
 		color: #3B4351;
@@ -2920,7 +2920,7 @@ table.tableList tr td {
 		text-indent: -3000px;
 		cursor: pointer;
 		display: block;
-		background-image: url(/images/icons/reportHeaderIcons.png);
+		background-image: url(../images/icons/reportHeaderIcons.png);
 		}
 	ul.reportHeaderControls li.paginationNext a {
 		background-position: -120px 0px;
@@ -2984,7 +2984,7 @@ table.tableList tr td {
 		line-height: 18px;
 		font-family: "Lucida Grande", Verdana, sans-serif;
 		background-color: #F1F0EF;
-		background-image: url(/images/bg/sideBar.png);
+		background-image: url(../images/bg/sideBar.png);
 		background-repeat: repeat-y;
 	}
 	a { 
@@ -3014,7 +3014,7 @@ table.tableList tr td {
 		top: 0;
 		right: 0;
 		left: 0;
-		background-image: url(/images/bg/dockBG.png);
+		background-image: url(../images/bg/dockBG.png);
 		background-color: #1D2B45;
 		background-repeat: repeat-x;
 		background-position: 0 0;
@@ -3081,7 +3081,7 @@ table.tableList tr td {
 		width: 101px;
 		height: 50px;
 		display: block;
-		background-image: url(/images/bg/appNameBubble.png);
+		background-image: url(../images/bg/appNameBubble.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		text-align: center;
@@ -3232,52 +3232,13 @@ table.tableList tr td {
 	.actionEdit a:active, .actionEdit a.active {
 		background-position: -1500px -90px;
 	}
-	
-	.actionSpam a.disabled, .actionSpam a:hover.disabled {
-		background-position: -4050px 0px;
-	}
-	.actionSpam a {
-		background-position: -4050px -30px;
-	}
-	.actionSpam a:hover {
-		background-position: -4050px -60px;
-	}
-	.actionSpam a:active, .actionSpam a.active {
-		background-position: -4050px -90px;
-	}
-
-	.actionNotSpam a.disabled, .actionNotSpam a:hover.disabled {
-		background-position: -4200px 0px;
-	}
-	.actionNotSpam a {
-		background-position: -4200px -30px;
-	}
-	.actionNotSpam a:hover {
-		background-position: -4200px -60px;
-	}
-	.actionNotSpam a:active, .actionNotSpam a.active {
-		background-position: -4200px -90px;
-	}
-
-	.actionDeleteAllSpam a.disabled, .actionDeleteAllSpam a:hover.disabled {
-		background-position: -4350px 0px;
-	}
-	.actionDeleteAllSpam a {
-		background-position: -4350px -30px;
-	}
-	.actionDeleteAllSpam a:hover {
-		background-position: -4350px -60px;
-	}
-	.actionDeleteAllSpam a:active, .actionDeleteAllSpam a.active {
-		background-position: -4350px -90px;
-	}
 		
 
 
 /* Toolbar  & Peek Toolbar -------------------------------------------------------------- */
 
 	ul#Toolbar {
-		background-image: url(/images/bg/toolbarBG.png);
+		background-image: url(../images/bg/toolbarBG.png);
 		background-repeat: repeat-x;
 		background-position: 0 0;
 		background-color: #F3F3F3;
@@ -3331,7 +3292,7 @@ table.tableList tr td {
 
 
 	#sidebars {
-		background-image: url(/images/bg/sideBarTopBG.png);
+		background-image: url(../images/bg/sideBarTopBG.png);
 		background-repeat: repeat-x;
 		background-position: 0 0;
 		background-color: transparent;
@@ -3501,7 +3462,7 @@ table.tableList tr td {
 	height: 38px;
 	width: 38px;
 	text-indent: -3000px;
-	background-image: url(/images/icons/devMenu.gif);
+	background-image: url(../images/icons/devMenu.gif);
 	z-index:6000;
 	}
 #developerToolsLink.collapsed {
@@ -3546,7 +3507,7 @@ table.tableList tr td {
 	background-repeat: no-repeat;
 	font-size: 85%;
 	color: #000;
-	background-image: url(/images/icons/plusMenuIcons.png);
+	background-image: url(../images/icons/plusMenuIcons.png);
 	}
 
 
@@ -3564,7 +3525,7 @@ table.tableList tr td {
 		height: 38px;
 		width: 38px;
 		text-indent: -3000px;
-		background-image: url(/images/icons/plusMenu.gif);
+		background-image: url(../images/icons/plusMenu.gif);
 		z-index:6000;
 		}
 	#plusMenuLink.collapsed {
@@ -3609,7 +3570,7 @@ table.tableList tr td {
 		background-repeat: no-repeat;
 		font-size: 85%;
 		color: #000;
-		background-image: url(/images/icons/plusMenuIcons.png);
+		background-image: url(../images/icons/plusMenuIcons.png);
 		}
 	
 	#loggedInUser {
@@ -3858,14 +3819,14 @@ $Id$
 	#modalDialog .content {
 		padding: 10px 20px 20px 80px;
 		margin: 10px 0 0 0;
-		background-image: url(/images/icons/attention48.png);
+		background-image: url(../images/icons/attention48.png);
 		background-repeat: no-repeat;
 		background-position: 15px 20px;
 		height: 296px;
 		overflow: auto;
 	}
 	#modalDialog .userSwitching {
-		background-image: url(/images/icons/userSwitching48.png);
+		background-image: url(../images/icons/userSwitching48.png);
 	}
 	#modalDialog .content fieldset {
 		padding: 1.25em;
@@ -3886,7 +3847,7 @@ $Id$
 	}
 	
 	#modalDialog .tip {
-		background-image: url(/images/icons/information.png);
+		background-image: url(../images/icons/information.png);
 		background-repeat: no-repeat;
 		background-position: 0 3px;
 		padding: 0 0 .5em 23px;

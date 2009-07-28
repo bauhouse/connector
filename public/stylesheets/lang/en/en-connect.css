@@ -21,13 +21,13 @@ $Id$
 
 	.actionRefreshAll a {	
 		width: 87px !important;
-		background-image: url(/images/lang/en/actionsConnect.png);
+		background-image: url(../../../images/lang/en/actionsConnect.png);
 		}
 	.actionCollapseAll a {	
 		width: 94px !important;
-		background-image: url(/images/lang/en/actionsConnect.png);
+		background-image: url(../../../images/lang/en/actionsConnect.png);
 		}
 	.actionExpandAll a, .actionShowNew a {	
 		width: 94px !important;
-		background-image: url(/images/lang/en/actionsConnect.png);
+		background-image: url(../../../images/lang/en/actionsConnect.png);
 		}

@@ -94,19 +94,16 @@ $Id$
 /* sidebar -------------------------------------------------- */
 
 	#calendar .all.folder {
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 		}
 	#calendar .smartGroup {		
-		background-image: url(/images/icons/groupCalendarSmart.png);
+		background-image: url(../images/icons/groupCalendarSmart.png);
 		}
 	#calendar .group {
-		background-image: url(/images/icons/calendar16.png);
+		background-image: url(../images/icons/calendar16.png);
 		}
 	#calendar .group.subscription {
-		background-image: url(/images/icons/groupCalendarSubscription.png);
-	}
-	#calendar .group.ics_subscription {
-		background-image: url(/images/icons/groupCalendarICS.png);
+		background-image: url(../images/icons/groupCalendarSubscription.png);
 	}
 
 /* List View ---------------------------------------------- */
@@ -138,7 +135,7 @@ $Id$
 		border-right: none !important;
   }
 	.addPlusSmall {
-		background-image: url(/images/icons/smallPlus.png);
+		background-image: url(../images/icons/smallPlus.png);
 		background-repeat: no-repeat;
 		background-position: 0 3px;
 		padding: 0 0 0 10px;
@@ -174,7 +171,7 @@ $Id$
 		}
 	.dateBarTitle span, .dateBarTitleCollapsed span {	
 		padding: 0 0 0 15px;
-		background-image: url(/images/calendar/today.gif);
+		background-image: url(../images/calendar/today.gif);
 		background-repeat: no-repeat;
 		background-position: -1px -2px;
 		}
@@ -251,7 +248,7 @@ $Id$
 		width: 16px;
 		margin: .25em .25em .25em 0;
 		text-indent: -3000px;
-		background-image: url(/images/icons/dayChartCombo.png);
+		background-image: url(../images/icons/dayChartCombo.png);
 		background-repeat: no-repeat;
   }
 	a.dateViewShow {
@@ -271,23 +268,19 @@ $Id$
 
 /* Month View --------------------------------------------- */
 	
-	#contentWrapper table#calendarMonthView {
-		margin: 0;
-		border-width: 1;
+	#calendarMonthView {
+		border-collapse: collapse;
+		margin: 0;	
+		border-width: 0 0 1px 0;
 		border-style: solid;
 		border-color: #CCC;
 		clear: left;
-		width: 100%;
-		border-collapse: collapse;
-	}
+  }
 	#calendarMonthView td {
 		border-color: #CCC #DDD #CCC #DDD;
 		border-width: 1px;
 		border-style: solid;
 		background-color: #FFF;
-	}	
-	#calendarMonthView td.not_current_month {
-		background-color: #F3F3F3;
 	}	
 	#calendarMonthView thead th { 
 		font-size:85%;
@@ -296,6 +289,7 @@ $Id$
   }
 	#calendarMonthView tr+td {
 		border-left: 1px solid #CCC !important;
+		background-color: red;
   }
 	#calendarMonthView caption {
 		display:none;
@@ -305,7 +299,6 @@ $Id$
 		height: 60px;
 		padding: 0px 2px 2px 2px;
 		white-space: normal;
-		border-width: 1;
 	}
 	.dayView .allDayEvent {
 		margin: 1px 1px 1px 1px;
@@ -330,7 +323,7 @@ $Id$
 		-webkit-border-bottom-right-radius: .7em;
 	}	
 	.allDayEvent a:hover {
-		background-image: url(/images/bg/eventAllDayHover.png);
+		background-image: url(../images/bg/eventAllDayHover.png);
 		background-repeat: repeat;
 		background-position: 0 0;
 	}	
@@ -350,7 +343,7 @@ $Id$
 		line-height: 1em;
 	}	
 	.monthViewEvent li a:hover {
-		background-image: url(/images/bg/eventShadowHover.png);
+		background-image: url(../images/bg/eventShadowHover.png);
 		background-position: left top;
 	}	
 	.monthViewEvent li a:hover, .monthViewAllDayEvent a:hover {
@@ -389,14 +382,14 @@ $Id$
 		color:#000 !important;
   }
 	.monthDay:hover {
-		background-image: url(/images/bg/eventShadowHover.png);
+		background-image: url(../images/bg/eventShadowHover.png);
   }
 	.addEventMonthView {
 		height: 9px;
 		width: 9px;
 		margin: 4px 2px 0 0;
 		float: right;
-		background-image: url(/images/icons/smallPlus.png);
+		background-image: url(../images/icons/smallPlus.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		display: block;
@@ -431,7 +424,7 @@ $Id$
 		height: 12px;
 		width: 12px;
   }
-	.overlayColorKeyCell {
+	.overlayColorKeyCell {		
 		padding: 0.75em;
 		background-color: #F9F9F9;
   }
@@ -444,33 +437,3 @@ $Id$
 		clear: both;
 		margin-top: 2em;
   }
-
-/* Drawers --------------------------------------------- */
-
-	.overlay_users.columns_4 .column {
-		width: 23%;
-	}
-		.overlay_users .column {
-			float: left;
-			display: block;
-			margin-left: 2%;
-		}
-			.overlay_users .column ul li {
-				display: block;
-				overflow: hidden;
-				white-space: nowrap;
-				padding: .25em .25em .25em 1em;
-				-moz-border-radius: 1em 1em 1em 1em;
-				-webkit-border-radius: .95em;
-				margin-bottom: .15em;
-			}
-				.overlay_users .column ul li.overlay_selected {
-					background-color: #DDD;
-				}
-				.overlay_users .column ul li .overlay_user {
-					background-image: url(/images/icons/user.png);
-					background-repeat: no-repeat;
-					background-position: left 0;
-					padding: .15em 0 .15em 18px;
-				}
-

@@ -41,16 +41,16 @@ $Id$
 
 
 	#bookmarks .all {
-		background-image: url(/images/icons/bookmark.png);
+		background-image: url(../images/icons/bookmark.png);
 		}
 	#bookmarks .everyones {
-		background-image: url(/images/icons/bookmarkEveryones.png);
+		background-image: url(../images/icons/bookmarkEveryones.png);
 		}
 	#bookmarks .smartGroup {		
-		background-image: url(/images/icons/groupFolderSmart.png);
+		background-image: url(../images/icons/groupFolderSmart.png);
 		}
 	#bookmarks .group.subscription {
-		background-image: url(/images/icons/groupFolderSubscription.png);
+		background-image: url(../images/icons/groupFolderSubscription.png);
 	}
 
 
@@ -70,6 +70,6 @@ $Id$
 	}
 
 	.saveBookmark {
-		background-image: url(/images/icons/bookmarkSave.png);
+		background-image: url(../images/icons/bookmarkSave.png);
 		padding-left: 19px !important;
 	}	

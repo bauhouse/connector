@@ -107,16 +107,16 @@ $Id$
 /* sidebar -------------------------------------------------- */
 
 	#lists .all.folder {
-		background-image: url(/images/icons/groupAllLists.png);
+		background-image: url(../images/icons/groupAllLists.png);
 	}
 	#lists .smartGroup {		
-		background-image: url(/images/icons/groupFolderSmart.png);
+		background-image: url(../images/icons/groupFolderSmart.png);
 		}
 	#lists .group {		
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 		}
 	#lists .group.subscription {
-		background-image: url(/images/icons/groupFolderSubscription.png);
+		background-image: url(../images/icons/groupFolderSubscription.png);
 	}
 
 /* list cells ------------------------------------------------ */
@@ -187,7 +187,7 @@ $Id$
 		border-right: 1px #0039C3 solid;
 	}
 	.rowSelector {
-		background-image: url(/images/icons/rowSelector.png);
+		background-image: url(../images/icons/rowSelector.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		width: 22px;
@@ -199,7 +199,7 @@ $Id$
 		vertical-align: top;
 	}
 	.itemRow.selected .rowSelector, .rowSelector:hover {
-		background-image: url(/images/icons/rowSelector.png);
+		background-image: url(../images/icons/rowSelector.png);
 		background-repeat: no-repeat;
 		background-position: 0 0;
 	}
@@ -219,7 +219,7 @@ $Id$
 		background-position: 0 -32px;
 	}
 	#listsTbody tr.selected td .rowSelector.saving {
-		background-image: url(/images/animation/loading16LightBlue.gif) !important;
+		background-image: url(../images/animation/loading16LightBlue.gif) !important;
 		background-position: center !important;
 	}
 	
@@ -239,7 +239,7 @@ $Id$
 	/* index view */
 	
 	th.listRadio a {
-		background-image: url(/images/icons/rowSelector.png);
+		background-image: url(../images/icons/rowSelector.png);
 		background-position: -5px -2px;
 		width: 12px;
 		height: 12px;
@@ -252,7 +252,7 @@ $Id$
 	}
 	
 	th.listDinger a, th.listDinger.expanded a {
-		background-image: url(/images/icons/dinger.png);
+		background-image: url(../images/icons/dinger.png);
 		width: 16px;
 		height: 16px;
 		display: block;

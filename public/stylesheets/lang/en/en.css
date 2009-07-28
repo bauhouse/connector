@@ -18,25 +18,25 @@ $Id$
 	CSS files, that persist across
 	all apps */	
 	.dockConnect a {	
-		background-image: url(/images/lang/en/app-connect.png);
+		background-image: url(../../../images/lang/en/app-connect.png);
 		}
 	.dockMail a {	
-		background-image: url(/images/lang/en/app-mail.png);
+		background-image: url(../../../images/lang/en/app-mail.png);
 		}
 	.dockCalendar a {		
-		background-image: url(/images/lang/en/app-calendar.png);
+		background-image: url(../../../images/lang/en/app-calendar.png);
 		}
 	.dockPeople a {	
-		background-image: url(/images/lang/en/app-people.png);
+		background-image: url(../../../images/lang/en/app-people.png);
 		}
 	.dockFiles a {	
-		background-image: url(/images/lang/en/app-files.png);
+		background-image: url(../../../images/lang/en/app-files.png);
 		}
 	.dockBookmarks a {	
-		background-image: url(/images/lang/en/app-bookmarks.png);
+		background-image: url(../../../images/lang/en/app-bookmarks.png);
 		}
 	.dockLists a {	
-		background-image: url(/images/lang/en/app-lists.png);
+		background-image: url(../../../images/lang/en/app-lists.png);
 		}
 	/* end stuff */
 
@@ -45,7 +45,7 @@ $Id$
 
 
 	.sidebarTab a {
-		background-image: url(/images/lang/en/tabs.png);
+		background-image: url(../../../images/lang/en/tabs.png);
 		}
 	#groupsSidebarTab a {
 		height: 83px;
@@ -68,47 +68,47 @@ $Id$
 
 	.actionMove a {	
 		width: 66px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionCopy a {	
 		width: 65px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionCopyDirect a {	
 		width: 59px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionNew a {	
 		width: 54px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionImport a {
 		width: 73px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionShowAll a {
 		width: 77px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionShowNew a {
 		width: 86px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionDelete a {	
 		width: 65px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionSaveSearch a {	
 		width: 93px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionTools a {	
 		width: 67px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionEdit a {	
 		width: 50px !important;
-		background-image: url(/images/lang/en/actionsGeneral.png);
+		background-image: url(../../../images/lang/en/actionsGeneral.png);
 		}
 	.actionSpam a {
 	    width: 64px !important;

@@ -30,22 +30,22 @@ $Id$
 /* sidebar -------------------------------------------- */
 
 	#files .smartGroup {		
-		background-image: url(/images/icons/groupFolderSmart.png);
+		background-image: url(../images/icons/groupFolderSmart.png);
 		}
 	#files .group {		
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 		}
 	#files .group.subscription {
-		background-image: url(/images/icons/groupFolderSubscription.png);
+		background-image: url(../images/icons/groupFolderSubscription.png);
 	}
 	#files .sidebar .all {
-		background-image: url(/images/icons/groupAllFiles.png);
+		background-image: url(../images/icons/groupAllFiles.png);
 	}	
 	#files .sidebar .strongspace {
-		background-image: url(/images/icons/groupStrongspace.png);
+		background-image: url(../images/icons/groupStrongspace.png);
 	}	
 	#files .sidebar .lightning {
-		background-image: url(/images/icons/groupLightning.png);
+		background-image: url(../images/icons/groupLightning.png);
 	}
 
 /* Item View ------------------------------------------- */

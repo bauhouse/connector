@@ -55,13 +55,13 @@ $Id$
 /* sidebar -------------------------------------------------- */
 
 	#connect .smartGroup {		
-		background-image: url(/images/icons/groupFolderSmart.png);
+		background-image: url(../images/icons/groupFolderSmart.png);
 		}
 	#connect .group {		
-		background-image: url(/images/icons/groupFolder.png);
+		background-image: url(../images/icons/groupFolder.png);
 		}
 	#connect .group.subscription {
-		background-image: url(/images/icons/groupFolderSubscription.png);
+		background-image: url(../images/icons/groupFolderSubscription.png);
 		}
 
 /* Item View ------------------------------------------- */
@@ -114,10 +114,3 @@ $Id$
   div.lightning a {
     text-decoration: underline;
   }
-
-/* Misc. ---------------------------------------------- */
-
-	
-	.ics_subscription {
-		background-image: url(/images/icons/groupCalendarICS.png);
-	}

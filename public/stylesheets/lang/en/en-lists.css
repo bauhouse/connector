@@ -21,29 +21,29 @@ $Id$
 
 	.actionOutdent a {	
 		width: 26px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionIndent a {	
 		width: 63px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionDeleteRow a {	
 		width: 95px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionAttributes a {	
 		width: 91px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionNewRow a {	
 		width: 79px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionMoveUp a {	
 		width: 26px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}
 	.actionMoveDown a {	
 		width: 26px !important;
-		background-image: url(/images/lang/en/actionsLists.png);
+		background-image: url(../../../images/lang/en/actionsLists.png);
 		}

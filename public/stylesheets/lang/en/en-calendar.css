@@ -21,25 +21,25 @@ $Id$
 
 	.actionMonthView a {
 		width: 96px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
 	.actionListView a {
 		width: 78px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
 	.actionDayView a {
 		width: 78px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
 	.actionWeekView a {
 		width: 86px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
 	.actionOverlayUser a {
 		width: 106px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
 	.actionToday a {
 		width: 66px !important;
-		background-image: url(/images/lang/en/actionsCalendar.png);
+		background-image: url(../../../images/lang/en/actionsCalendar.png);
 		}
