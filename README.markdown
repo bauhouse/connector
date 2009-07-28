@@ -4,7 +4,7 @@ A while ago, Joyent announced their Connector Suite as [Free + Open](http://joye
 
 In my mind, that was a shame. It is a beautiful interface. If only its functionality as an integrated suite of collaboration tools lived up to the promise. A number of issues remain as part of the [Maintenance milestone](https://dev.joyent.com/projects/connector/tickets?status=1&milestone=4). A [few tickets were closed](https://dev.joyent.com/projects/connector/tickets?status=0&milestone=4), but little more has happened with the project since.
 
-Having found that the GPL v2 released Joyent Connector is here on GitHub, it would be nice to see this project revived in some way. This repository is way of making the source more accessible for interface designers who may not necessarily be interested in developing with Ruby on Rails, but are interested in how the interface has been built.
+Having found that the GPL v2 released Joyent Connector is here on GitHub, it would be nice to see this project revived in some way. This repository is a way of making the source more accessible for interface designers who may not necessarily be interested in developing with Ruby on Rails, but are interested in how the interface has been built.
 
 I have omitted the Ruby files, except for some of the HTML contained in the `app` directory, leaving the Photoshop source files in the `assets` directory, hints about the database structure in the `db` directory, the `docs` and license files, and the `public` directory. The changes I have made so far reside in the `public` directory. The page templates are included for the Login panel, the error pages, and the main pages of the interface, with relative URLs pointing to images, JavaScript and CSS assets:
 
@@ -15,6 +15,8 @@ I have omitted the Ruby files, except for some of the HTML contained in the `app
 - Files
 - Bookmarks
 - Lists
+
+**Note**: The Photoshop source files are quite large. This repository, uncompressed, is 99.4 MB.
 
 ## Screenshots
 
